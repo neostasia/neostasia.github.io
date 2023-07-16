@@ -11,6 +11,7 @@
 body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     height: 100%;
 }
 
@@ -31,7 +32,7 @@ h2 {
 }
  
 h3 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 i {
@@ -134,20 +135,68 @@ ul {
 
 
 .list-group {
-    margin: auto;
+    /* padding: 5px 20px 5px 20px; */
     border-radius: 0px;
+    
 }
 
 .list-group-item {
+    margin: 0px;
+    padding: 8px 20px 5px 20px;
+
     height: 45px;
     text-align: left;
 
     border-radius: 0px;
-    border-left: double black;
-    border-right: double black;
-    
-    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+
+    background-color: rgb(228, 229, 230);
 }
+
+.list-group-item a {
+    color: #151414;
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+.list-group-item:hover {
+    background: #d4d4d4;
+    transform: scale(1.01);
+    transition-duration: 0.15s;
+}
+
+
+.important {
+    font-weight: 600;
+    background-color: rgb(208, 209, 210);
+}
+
+
+.mini-container {
+    margin: 10px 10px 10px 20px;
+    border-bottom: 3px solid #198754;
+    width: 5%;
+    white-space: nowrap;
+}
+
+.featured-container {
+    margin: 20px;
+}
+
+.featured-content {
+    margin: 20px 50px 50px 20px;
+}
+
+.featured-img {
+    margin: 20px auto;
+    width: 90%;
+    border: 3px solid rgb(158, 158, 158);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%)
+}
+
 
 /**************************************************************\
 |==============================================================|
@@ -215,9 +264,43 @@ ul {
     background-color: #dddddd;
 }
 
-.card-block {
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     margin: 20px;
 }
+
+/* .card:hover {
+    bottom: 5px;
+} */
+
+.card-block {
+    padding: 10px 20px 10px 20px;
+    background: #19875433;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    height: 200px;
+    font-size: 15px;
+}
+
+.card-header {
+    background: #198754;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-header:hover {
+    background-color: #157347;
+    border-color: #146c43;
+    transition-duration: 0.15s;
+}
+
+
+
 
 /**************************************************************\
 |==============================================================|

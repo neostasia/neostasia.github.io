@@ -1,0 +1,438 @@
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    TAGS
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+h3 {
+    font-size: 16px;
+}
+
+i {
+    padding: 5px;
+}
+
+.paragraph {
+    text-indent: 2em;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+p {
+    margin: 10px;
+}
+
+pre {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    IDENTIFIERS
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+
+#brand {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#hero-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-image:hover {
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    CLASSES
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+
+.block {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.detail-block {
+    position: absolute;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.h3-light {
+    color: #5c5c5c;
+}
+
+.h3-important-2 {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.h3-important-1 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.hr-bold {
+    border: 3px solid rgb(138, 138, 138); 
+    margin: 50px;
+}
+
+
+.list-group {
+    margin: auto;
+    border-radius: 0px;
+}
+
+.list-group-item {
+    height: 45px;
+    text-align: left;
+
+    border-radius: 0px;
+    border-left: double black;
+    border-right: double black;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    NAVBAR
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+.navbar {
+    height: 100px;
+    border-bottom: 3px solid rgb(182, 182, 182);   
+    position: relative;
+}
+
+.navbar-logo {
+    margin: 0 15px 0 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+
+.navbar-text {
+    margin-left: 10%;
+    margin-right: 10%;
+    bottom: 0;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    MAIN
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+.main-container {
+    margin: 50px 0 50px 0;
+    border-bottom: 3px solid rgb(182, 182, 182);   
+}
+
+.main-content {
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.carousel {
+    width: 640px;
+    height: 360px;
+    background-color: #dddddd;
+}
+
+.carousel-item {
+    width: 640px;
+    height: 360px;
+    background-color: #dddddd;
+}
+
+.card-block {
+    margin: 20px;
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    FOOTER
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    display: table-cell;
+}
+
+.footer-social-icon i:hover {
+    filter: brightness(90%);
+    transition-duration: 0.2s;
+}
+
+.facebook-bg {
+    background: #3B5998;
+}
+
+.twitter-bg {
+    background: #55ACEE;
+}
+
+.google-bg {
+    background: #DD4B39;
+}
+
+.instagram-bg {
+    background: #dd2553;
+}
+
+.github-bg {
+    background: #333;
+}
+
+/* Footer columns */
+
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #198754;
+}
+
+.footer-widget ul {
+    float: left;
+    width: 45%;
+}
+
+.footer-widget ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover{
+    color: #198754;
+}
+
+.footer-widget ul li a {
+    color: #e8e8e8;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+.subscribe-form {
+    display: flex;
+    position: relative;
+    border-radius: 0px;
+    height: 50px;
+}
+
+.subscribe-form input {
+    border: none;
+    background: #e8e8e8;
+    border-radius: 0px;
+    /* color: #fff; */
+}
+
+.subscribe-form input:focus {
+    outline: none;
+    filter: brightness(110%);
+    transition-duration: 0.2s;
+}
+
+.subscribe-form button {
+   
+    background: #198754;
+   
+    font-weight: 500;
+    font-size: 16px;
+    width: 120px;
+
+    color: #fff;
+    border: none;
+
+} 
+
+.subscribe-form button:hover {
+    background-color: #157347;
+    border-color: #146c43;
+    transition-duration: 0.15s;
+}
+
+
+/* .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+} */
+
+/* .footer-logo {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 32px;
+    border-bottom: 2px solid #198754;
+    font-weight: 600;
+}
+
+.footer-logo img {
+    max-width: 64px;
+    margin: 20px;
+} */
+
+
+
+
+
+
+
+.footer-section {
+    background: #151414;
+    position: relative;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #e8e8e8;
+    line-height: 28px;
+}
+
+
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+}
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+.copyright-text p a{
+    color: #198754;
+}
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer-menu li:hover a{
+    color: #198754;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}

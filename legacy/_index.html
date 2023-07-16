@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Neostasia">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel='icon' href='./images/favicon.ico' type='image/x-icon' />
+    <title>NEOSTASIA</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass:300,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/typedtext.js"></script>
+</head>
+
+<body>
+    
+    <!-- NAVBAR STARTS -->
+    <header class="header-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex" href="#">
+                <h1 class="navbar-title">NEOSTASIA</h1>
+            </a>
+
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbar1"
+                    aria-controls="navbar1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-links">
+                        <li class="nav-item active"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+    
+        </nav>
+
+
+    </header>
+
+    <!-- BACKGROUND IMAGE -->
+
+    <section>
+        <div class="heading-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading">
+                            <h1 class="heading-title">WELCOME TO NEOSTASIA</h1>
+                            <h2 id="typedtext" class="heading-subtitle"></h2> <!--  Together a better internet. -->
+                            <!-- <button type="button" class="btn btn-primary">Start writing</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MIDDLE NAV -->
+
+    <!-- at full width -->
+    <!-- <section class="bg-white middle-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="d-flex category-list">
+                        <li id="all-button" class="category active" type="button" onclick="filterAll()">
+                            All Blogs
+                        </li>
+                        <li id="money-button" class="category" type="button" onclick="filterSelection('money-card', 'money-button')">
+                            Money
+                        </li>
+                        <li id="sport-button" class="category" type="button" onclick="filterSelection('sport-card', 'sport-button')">
+                            Sport
+                        </li>
+                        <li id="tech-button" class="category" type="button" onclick="filterSelection('tech-card', 'tech-button')">
+                            Tech
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- MAIN CONTENT -->
+
+    <section>
+        <div class="main-image">
+            <div class="container">
+                <div class="row mt-5">
+                        <div class="col-12 col-lg-9 ">
+
+                            <div class="card bg-white money-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/tax.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">10 Money Saving Tips</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!</p>
+                                        <h2 class="card-author">by Alan Accountant</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white sport-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/sport.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">My First Marathon</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
+                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
+                                        </p>
+                                        <h2 class="card-author">by Jim Jogger</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white tech-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/technology.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">Never Too Old To Code</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
+                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
+                                        </p>
+                                        <h2 class="card-author">by Dorothy Developer</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-white money-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/stocks.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">My Day Stockbroking</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
+                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
+                                        </p>
+                                        <h2 class="card-author">by Tania Trader</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card bg-white sport-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/football.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">Why I Love Football</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
+                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
+                                        </p>
+                                        <h2 class="card-author">by Fred Free-Kick</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card bg-white tech-card">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <img class="card-image" src="./images/hacking.jpg" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <a class="card-title-link" href="#">
+                                            <h1 class="card-title">Best Coding Hack</h1>
+                                        </a>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
+                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
+                                        </p>
+                                        <h2 class="card-author">by Harry Hacker</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                    <div class="col-3">
+                        <div class="bg-white d-none d-lg-block navigation-link-box">   
+                            <h3 class="navigation-link-title">More Blogs</h3>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button">Health</h3>
+                            </a>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button">Dating</h3>
+                            </a>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button">Funny</h3>
+                            </a>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button">Communication</h3>
+                            </a>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button">Entertainment</h3>
+                            </a>
+                            <a href="#" class="navigation-link">
+                                <h3 class="navigation-button final">Food</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <p>
+                        Copyright &copy; 
+                        <script>document.write(new Date().getFullYear())</script>
+                        <a class="footer-organization-info" href="https://github.com/neostasia" target="_blank"><span>Neostasia</span></a>
+                        All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-6 d-none d-xl-block"></div>
+                <div class="col-12 col-xl-3">
+                    <ul class="footer-list d-flex">
+                        <li class="footer-button" type="button" href="terms.html">Terms</li>
+                        <div class="separator"></div>
+                        <li class="footer-button" type="button" href="faq.html">FAQ</li>
+                        <div class="separator"></div>
+                        <li class="footer-button" type="button" href="privacy.html">Privacy Policy</li>
+                        <div class="separator"></div>
+                        <li class="footer-button" type="button" href="credits.html">Credits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Credits:
+    Original website developed by Nicholas Roy http://nicholasroy.co.uk/ -->

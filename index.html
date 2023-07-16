@@ -1,271 +1,312 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
+    <!-- Properties-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Nicholas Roy / CaSe">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Neostasia">
+    <meta name="description" content="The official Neostasia website">
+    <meta name="theme-color" content="#328cc1">
 
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
+    <meta property="og:updated_time" content="2022-11-16T00:00:00&#43;00:00">
+        
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass:300,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
-
-
-    <link rel='icon' href='./images/favicon.ico' type='image/x-icon' />
-    <title>NEOSTASIA</title>
-
-    <!-- JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/typedtext.js"></script>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+    <link rel="icon" type="image/x-icon" href="./assets/images/ns_logo.png">
+    <link rel="canonical" href="/">
+    
+    <title>Neostasia</title>
 </head>
 
-<body>
-    
-    <!-- NAVBAR STARTS -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand d-flex" href="#">
-                <h1 class="navbar-title">NEOSTASIA</h1>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+
+            <a id="brand" class="navbar-brand" href="#">
+                <img class="navbar-logo" src="./assets/images/ns_logo.png" alt="Navbar Logo"></img>
+                Neostasia
             </a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+
+            <div class="col-md">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary mr-3" type="button" href="#">Sign Up</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link btn btn-outline-primary" type="button" href="#">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
 
-    <!-- BACKGROUND IMAGE -->
+            <div class="vr"></div>
 
-    <section>
-        <div class="heading-image">
+            <div class="col-md">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dangers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prevention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiences</a>
+                    </li>
+                </ul>     
+            </div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+
+    
+    <!-- Hero -->
+
+     
+  
+    <div id="hero" class="container px-4 py-5" >
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img id="hero-image" class="d-block mx-lg-auto img-fluid" src="./assets/images/hero_image.jpg"  alt="" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <h2 class="fw-bold display-6">Welcome to Neostasia</h2>
+                    </div>
+                </div>
+    
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. We help make the internet a safer place for children.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a class="btn btn-success px-4 me-md-2" href="roadmap.html" role="button">Start</a>
+                    <a class="btn btn-outline-secondary px-4" href="about.html" role="button">Learn More</a>
+                </div>
+    
+            </div>
+        </div>
+    </div> 
+
+    <hr class="hr-bold">
+     
+    <div class="container">
+        <h1>Information</h1>
+  
+        <!-- <div class="row card-row">
+            <div class="card col-md-4">
+                <div class="card-block">
+                <img class="card-img-top" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="card col-md-4">
+                <img class="card-img-top" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card col-md-4">
+                <img class="card-img-top" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h5 class="card-title">Dangers</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h5 class="card-title">Prevention</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="./assets/images/placeholder_image.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h5 class="card-title">Experiences</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <!-- https://codepen.io/baahubali92/pen/KbRBxJ -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+
+                    <!-- Follow Us -->
+                    <div class="col-xl-3 col-lg-3 mb-50">
+                        <div class="footer-widget">
+
+                            <!-- <div class="footer-logo">
+                                <a href="index.html"><img src="./assets/images/ns_logo.png"class="img-fluid" alt="logo"></a>
+                                Neostasia
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div> -->
+
+                            <div class="footer-social-icon">
+                                <div class="footer-widget-heading">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f facebook-bg"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter twitter-bg"></i>
+                                </a>
+                                <!-- <a href="#">
+                                    <i class="fab fa-google-plus-g google-bg"></i>
+                                </a> -->
+                                <a href="#">
+                                    <i class="fab fa-instagram instagram-bg"></i>
+                                </a>
+                                <a href="https://github.com/neostasia">
+                                    <i class="fab fa-github github-bg"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Useful Links -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                 
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Socials</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                       
+                            <ul>
+                                <li><a href="#">Dangers</a></li>
+                                <li><a href="#">Prevention</a></li>
+                                <li><a href="#">Experiences</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">References</a></li>
+                            </ul>
+                         
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Stay informed on internet safety. Tips and tricks delivered straight to your inbox!</p>
+                            </div>
+                            <div class="subscribe-form">
+
+                                <input class="form-control" type="email" name="email" placeholder="Email Address">
+
+                                <button>Sign Up</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="heading">
-                            <h1 class="heading-title">NEOSTASIA</h1>
-                            <h2 id="typedtext" class="heading-subtitle"></h2> <!--  Together a better internet. -->
-                            <button type="button" class="btn btn-primary">Start writing</button>
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 
+                                <script>document.write(new Date().getFullYear())</script> 
+                                <a href="https://github.com/neostasia">Neostasia</a> All Rights Reserved</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- MIDDLE NAV -->
-
-    <!-- at full width -->
-    <section class="bg-white middle-nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="d-flex category-list">
-                        <li id="all-button" class="category active" type="button" onclick="filterAll()">
-                            All Blogs
-                        </li>
-                        <li id="money-button" class="category" type="button" onclick="filterSelection('money-card', 'money-button')">
-                            Money
-                        </li>
-                        <li id="sport-button" class="category" type="button" onclick="filterSelection('sport-card', 'sport-button')">
-                            Sport
-                        </li>
-                        <li id="tech-button" class="category" type="button" onclick="filterSelection('tech-card', 'tech-button')">
-                            Tech
-                        </li>
-                    </ul>
-                </div>
-    </section>
-
-    <!-- MAIN CONTENT -->
-
-    <section>
-        <div class="main-image">
-            <div class="container">
-                <div class="row mt-5">
-                        <div class="col-12 col-lg-9 ">
-
-                            <div class="card bg-white money-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/tax.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">10 Money Saving Tips</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!</p>
-                                        <h2 class="card-author">by Alan Accountant</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card bg-white sport-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/sport.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">My First Marathon</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
-                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
-                                        </p>
-                                        <h2 class="card-author">by Jim Jogger</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card bg-white tech-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/technology.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">Never Too Old To Code</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
-                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
-                                        </p>
-                                        <h2 class="card-author">by Dorothy Developer</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card bg-white money-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/stocks.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">My Day Stockbroking</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
-                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
-                                        </p>
-                                        <h2 class="card-author">by Tania Trader</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card bg-white sport-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/football.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">Why I Love Football</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
-                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
-                                        </p>
-                                        <h2 class="card-author">by Fred Free-Kick</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="card bg-white tech-card">
-                                <div class="row align-items-center">
-                                    <div class="col-12 col-md-4">
-                                        <img class="card-image" src="./images/hacking.jpg" />
-                                    </div>
-                                    <div class="col-12 col-md-8">
-                                        <a class="card-title-link" href="#">
-                                            <h1 class="card-title">Best Coding Hack</h1>
-                                        </a>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab laborum nostrum libero, dolorum
-                                            odit sunt omnis facilis eaque, cupiditate aliquam qui numquam! Eius iusto at, in impedit placeat hic!
-                                        </p>
-                                        <h2 class="card-author">by Harry Hacker</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    
-                    <div class="col-3">
-                        <div class="bg-white d-none d-lg-block navigation-link-box">   
-                            <h3 class="navigation-link-title">More Blogs</h3>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button">Health</h3>
-                            </a>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button">Dating</h3>
-                            </a>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button">Funny</h3>
-                            </a>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button">Communication</h3>
-                            </a>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button">Entertainment</h3>
-                            </a>
-                            <a href="#" class="navigation-link">
-                                <h3 class="navigation-button final">Food</h3>
-                            </a>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-xl-3">
-                    <p>produced by <a class="footer-author-name" href="http://nicholasroy.co.uk/" target="_blank"><span>Nicholas Roy</span></a></p>
-                </div>
-                <div class="col-6 d-none d-xl-block"></div>
-                <div class="col-12 col-xl-3">
-                    <ul class="footer-list d-flex">
-                        <li class="footer-button" type="button">
-                            Terms
-                        </li>
-                        <div class="separator"></div>
-                        <li class="footer-button" type="button">
-                            FAQ
-                        </li>
-                        <div class="separator"></div>
-                        <li class="footer-button" type="button">
-                            Privacy Policy
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+      
+   
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
 </body>
-
 </html>

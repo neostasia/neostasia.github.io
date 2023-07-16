@@ -1,0 +1,109 @@
+body {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    height: 80px;
+}
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+  }
+  
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+
+
+.navbar-text {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.navbar-brand {
+    color: #142d4c;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+}
+
+.navbar-brand-container {
+    width: 300px;
+    margin: 0;
+    padding: 10px;
+    background-color: #9fd3c7;
+}
+
+.navbar-links-1 {
+    float: left;
+    margin: 0;
+    background-color: #ececec;
+}
+
+.navbar-links-2 {
+    float: right;
+    margin-right: 50px;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar-link-container {
+    padding-top: 10px;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+}
+
+.navbar-link-container:hover {
+    background-color: #d7d7d7;
+    transition-duration: 0.1s;
+}
+
+.navbar-link {
+    color: #142d4c;
+    
+    font-style: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.content-a {
+    clear: both;
+    margin-top: 20px;
+}
+
+.content-a-right {
+    float: right;
+    width: 66.66%;
+}
+
+.carousel {
+    float: left;
+    width: 33.33%;
+}
+/* Placeholder stylesPlease note that the code provided above is a basic example to demonstrate the structure and layout of the website you described. You would need to add additional CSS styles and replace the placeholder content with your own text, images, and links to complete the website. Feel free to modify the styles and customize the design further to meet your requirements.
+
+Let me know if you need any further assistance!*/

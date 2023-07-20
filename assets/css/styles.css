@@ -177,7 +177,7 @@ ul {
 .mini-container {
     margin: 50px 10px 10px 20px;
     border-bottom: 3px solid #198754;
-    width: 5%;
+    width: 50px;
     white-space: nowrap;
 }
 
@@ -235,6 +235,13 @@ ul {
     text-decoration: underline;
 }
 
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: 20px;
+        padding: 25px;
+        border: 3px solid rgb(182, 182, 182);
+    }
+}
 /**************************************************************\
 |==============================================================|
 |==============================================================|
@@ -306,6 +313,10 @@ ul {
     transition-duration: 0.15s;
 }
 
+#contact-request-form button {
+    margin: 10px auto;
+    width: 100%;
+}
 
 
 
@@ -319,12 +330,11 @@ ul {
 |==============================================================|
 \**************************************************************/
 
-.footer-social-icon span {
+.footer-social-icon {
     color: #fff;
     display: block;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
 }
 
@@ -411,6 +421,16 @@ ul {
     text-transform: capitalize;
 }
 
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    MAILING LIST
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
 
 #mlist-form {
     display: flex;
@@ -449,6 +469,11 @@ ul {
     background-color: #157347;
     border-color: #146c43;
     transition-duration: 0.15s;
+}
+
+#mlist-email-length-error {
+    margin: 10px 0 0 10px;
+    color: #ff0000;
 }
 
 

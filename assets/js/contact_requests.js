@@ -1,4 +1,13 @@
+const maxMessageLength = 2048;
+
 const contactRequestForm = document.getElementById('contact-request-form');
+const messageInput = document.getElementById('contact-request-message');
+const messageCharCounter = document.getElementById('contact-request-message-char-counter');
+
+messageInput.addEventListener('input', () => {
+    const messageValue = messageInput.value;
+    messageCharCounter.innerHTML = `${messageValue.length}/${maxMessageLength}`;
+});
 
 contactRequestForm.addEventListener('submit', async (e) => {
     e.preventDefault();

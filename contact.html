@@ -31,53 +31,56 @@
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <div class="container-fluid">
-
             <a id="brand" class="navbar-brand" href="#">
                 <img class="navbar-logo" src="./assets/images/ns_logo.png" alt="Navbar Logo"></img>
                 Neostasia
             </a>
-
-            <div class="col-md">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                    </li>
-                </ul>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse bg-light" id="navbarContent">
+                <div class="col-md-7">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-md">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dangers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prevention</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Experiences</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
             </div>
-
-            <div class="vr"></div>
-
-            <div class="col-md">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dangers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Prevention</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experiences</a>
-                    </li>
-                </ul>     
-            </div>
-
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-            </form>
-
         </div>
-
     </nav>
+    <!-- END Navbar -->
+    
 
     <!-- Contact Form -->
     <div class="container my-5">
@@ -89,31 +92,33 @@
                     <div class="row g-3">
                         <div class="col-12">
                             <label for="contact-request-subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="contact-request-subject" name="contact-request-subject" required>
+                            <input type="text" class="form-control" id="contact-request-subject" name="contact-request-subject" maxlength="256" required>
                         </div>
                         <div class="col-md-6">
                             <label for="contact-request-name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="contact-request-name" name="contact-request-name" required>
+                            <input type="text" class="form-control" id="contact-request-name" name="contact-request-name" maxlength="128" required>
                         </div>
                         <div class="col-md-6">
                             <label for="contact-request-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="contact-request-email" name="contact-request-email" required>
+                            <input type="email" class="form-control" id="contact-request-email" name="contact-request-email" maxlength="128" required>
                         </div>
                         
                         <div class="col-12">
                             <label for="contact-request-message" class="form-label">Message</label>
-                            <textarea class="form-control" id="contact-request-message" name="contact-request-message" rows="5" required></textarea>
+                            <textarea class="form-control" id="contact-request-message" name="contact-request-message" rows="5" maxlength="2048" required></textarea>
                         </div>
-
                         <!-- <input type="hidden" name="contact-request-timestamp" id="contact-request-timestamp" value=""> -->
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn btn-dark w-100 fw-bold">Send</button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
+                    <!-- Character counter -->
+                    <div class="float-end" id="contact-request-message-char-counter">
+                        0/2048
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark fw-bold">Send</button>
+                    </div>
+
                 </form>
             </div>
             <div class="col-lg-1"></div>
@@ -134,15 +139,6 @@
                     <!-- Follow Us -->
                     <div class="col-xl-3 col-lg-3 mb-50">
                         <div class="footer-widget">
-
-                            <!-- <div class="footer-logo">
-                                <a href="index.html"><img src="./assets/images/ns_logo.png"class="img-fluid" alt="logo"></a>
-                                Neostasia
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                            </div> -->
 
                             <div class="footer-social-icon">
                                 <div class="footer-widget-heading">
@@ -176,7 +172,7 @@
                             </div>
                  
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="socials.html">Socials</a></li>
@@ -203,11 +199,12 @@
                             </div>
                             <form id="mlist-form">
                             
-                                <input class="form-control" type="email" name="mlist-email" id="mlist-email" placeholder="Email Address">
+                                <input class="form-control" type="email" name="mlist-email" id="mlist-email" placeholder="Email address">
 
                                 <button type="submit">Sign Up</button>
 
                             </form>
+                            <div id="mlist-email-length-error"></div>
                         </div>
                     </div>
                 </div>
@@ -238,6 +235,7 @@
             </div>
         </div>
     </footer>
+    <!-- END Footer -->
 
     <!-- Scripts -->
     <script src="./assets/js/contact_requests.js"></script>

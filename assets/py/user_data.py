@@ -1,3 +1,4 @@
+import html
 import json
 import os
 import sqlite3
@@ -6,7 +7,7 @@ import sys
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-from util import uts
+from util import unix_ts, sanitize_inputs
 
 # Custom Flask class for running functions before app
 # class FlaskMod(Flask):
@@ -27,23 +28,30 @@ flask --app ./assets/py/user_data.py --debug run
 
 @app.route('/save_contact_request', methods=['POST'])
 def save_contact_request():
+    # sanitize input
+    cleaned_form = sanitize_inputs(request.form)
+
     # We save contact requests to the database by default
     # Unlikely to change later; JSON was only for early testing
     save_db = True 
+
     try:
+        # connect to db
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
 
-        # form data
-        subject = request.form.get('contact-request-subject')
-        full_name = request.form.get('contact-request-name')
-        email = request.form.get('contact-request-email')
-        message = request.form.get('contact-request-message')
-        timestamp = uts()
+        # read form data from request
+        # & get current unix timestamp
+        subject = cleaned_form.get('contact-request-subject')
+        full_name = cleaned_form.get('contact-request-name')
+        email = cleaned_form.get('contact-request-email').lower()
+        message = cleaned_form.get('contact-request-message')
+        timestamp = unix_ts()
 
 
         if save_db:
             # Save the data to the database
+
             cursor.execute('''INSERT INTO contact_requests (
                                 subject, full_name, email, message, timestamp
                               ) VALUES (?, ?, ?, ?, ?)''',
@@ -76,35 +84,56 @@ def save_contact_request():
             'success': False, 
             'message': f'Error trying to upload contact request: {e}'
         })
+    
+    finally:
+        conn.close()
 
 @app.route('/save_mlist', methods=['POST'])
 def save_mlist():
+    # sanitize inputs
+    cleaned_form = sanitize_inputs(request.form)
 
     try:
+        # connect to db
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
 
-        # form data
-        email = request.form.get('mlist-email')
+        # gather form data (email addr, opt in, signup time)
+        email = cleaned_form.get('mlist-email').lower()
         opt_in = 1
-        signup_timestamp = uts()
+        signup_timestamp = unix_ts()
 
-        # upload to db
-        cursor.execute('''INSERT INTO mailing_list (
-                        email, opt_in, signup_timestamp
-                        ) VALUES (?, ?, ?)''',
-                        (email, opt_in, signup_timestamp))
-        conn.commit()
+        # Check if the email already exists in the db
+        cursor.execute("SELECT email FROM mailing_list WHERE email=?", (email,))
+        existing_email = cursor.fetchone()
 
-        return jsonify({
-            'success': True
-        })
-    
+        if existing_email:
+            # Email already exists
+            return jsonify({
+                'success': False,
+                'message': 'Email address already exists in the mailing list.'
+            })
+        
+        else:
+            # Insert the new entry into the db
+            cursor.execute('''INSERT INTO mailing_list (
+                            email, opt_in, signup_timestamp
+                            ) VALUES (?, ?, ?)''',
+                            (email, opt_in, signup_timestamp))
+            conn.commit()
+
+            return jsonify({
+                'success': True
+            })
+
     except Exception as e:
         return jsonify({
             'success': False, 
             'message': f'Error trying to subscribe to mailing list: {e}'
         })
+    
+    finally:
+        conn.close()
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000)

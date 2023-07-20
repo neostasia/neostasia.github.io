@@ -81,6 +81,8 @@ def truncate_table(conn, table_name, rows=None):
         return False
 
 
+
+
 """
 python3 ./assets/py/db_util.py
 """
@@ -88,8 +90,10 @@ def main():
     conn = sqlite3.connect("./db/user_data.sqlite3")
 
     # Initialize DBs for user_data
-    create_mailing_list_table(conn)
-    create_contact_requests_table(conn)
+    # create_mailing_list_table(conn)
+    # create_contact_requests_table(conn)
+
+    truncate_table(conn, "mailing_list")
 
 if __name__ == '__main__':
     main()

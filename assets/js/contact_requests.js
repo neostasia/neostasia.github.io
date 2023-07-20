@@ -12,18 +12,23 @@ contactRequestForm.addEventListener('submit', async (e) => {
     // Perform the Fetch POST request to the backend endpoint
 
     try {
+
+        // backend processing
         const response = await fetch('http://127.0.0.1:5000/save_contact_request', {
             method: 'POST',
             body: contactRequestFormData,
         });
 
-        if (response.ok) {
+        const responseData = await response.json(); // Parse the JSON response
+
+        if (responseData.success) {
             alert('Query sent successfully!');
-            contactRequestForm.reset();
+            mlistForm.reset();
         } else {
-            const errorMessage = await response.text();
+            const errorMessage = responseData.message;
             alert(`Failed to send query. Error: ${errorMessage}`);
         }
+
     } catch (error) {
         console.error(error);
         alert(`An error occurred: ${error}`);

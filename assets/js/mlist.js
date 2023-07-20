@@ -1,19 +1,19 @@
-const form = document.getElementById('mlist-form');
+const mlistForm = document.getElementById('mlist-form');
 
-form.addEventListener('submit', async (e) => {
+mlistForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
+    const mlistFormData = new FormData(mlistForm);
 
     try {
         const response = await fetch('http://127.0.0.1:5000/save_mlist', {
             method: 'POST',
-            body: formData,
+            body: mlistFormData,
         });
 
         if (response.ok) {
             alert('Query sent successfully!');
-            form.reset();
+            mlistForm.reset();
         } else {
             const errorMessage = await response.text();
             alert(`Failed to send query. Error: ${errorMessage}`);

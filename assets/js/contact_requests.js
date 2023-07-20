@@ -1,9 +1,9 @@
-const form = document.getElementById('contact-request-form');
+const contactRequestForm = document.getElementById('contact-request-form');
 
-form.addEventListener('submit', async (e) => {
+contactRequestForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
+    const contactRequestFormData = new FormData(contactRequestForm);
 
     // Note: The timestamp is now generated in the backend instead
     // const timestamp = Math.floor(Date.now() / 1000); 
@@ -14,12 +14,12 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await fetch('http://127.0.0.1:5000/save_contact_request', {
             method: 'POST',
-            body: formData,
+            body: contactRequestFormData,
         });
 
         if (response.ok) {
             alert('Query sent successfully!');
-            form.reset();
+            contactRequestForm.reset();
         } else {
             const errorMessage = await response.text();
             alert(`Failed to send query. Error: ${errorMessage}`);

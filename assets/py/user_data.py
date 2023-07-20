@@ -85,7 +85,7 @@ def save_mlist():
         cursor = conn.cursor()
 
         # form data
-        email = request.form.get('email')
+        email = request.form.get('mlist-email')
         opt_in = 1
         signup_timestamp = uts()
 
@@ -103,7 +103,7 @@ def save_mlist():
     except Exception as e:
         return jsonify({
             'success': False, 
-            'message': f'Error trying to upload contact request: {e}'
+            'message': f'Error trying to subscribe to mailing list: {e}'
         })
 
 if __name__ == '__main__':

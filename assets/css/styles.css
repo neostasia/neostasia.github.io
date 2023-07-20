@@ -412,27 +412,27 @@ ul {
 }
 
 
-.subscribe-form {
+#mlist-form {
     display: flex;
     position: relative;
     border-radius: 0px;
     height: 50px;
 }
 
-.subscribe-form input {
+#mlist-form input {
     border: none;
     background: #e8e8e8;
     border-radius: 0px;
     /* color: #fff; */
 }
 
-.subscribe-form input:focus {
+#mlist-form input:focus {
     outline: none;
     filter: brightness(110%);
     transition-duration: 0.2s;
 }
 
-.subscribe-form button {
+#mlist-form button {
    
     background: #198754;
    
@@ -445,14 +445,14 @@ ul {
 
 } 
 
-.subscribe-form button:hover {
+#mlist-form button:hover {
     background-color: #157347;
     border-color: #146c43;
     transition-duration: 0.15s;
 }
 
 
-/* .subscribe-form button i {
+/* #mlist-form button i {
     color: #fff;
     font-size: 22px;
     transform: rotate(-6deg);

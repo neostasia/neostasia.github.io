@@ -84,7 +84,7 @@ def truncate_table(conn, table_name, rows=None):
 
 
 """
-python3 ./assets/py/db_util.py
+python3 ./backend/py/db_util.py
 """
 def main():
     conn = sqlite3.connect("./db/user_data.sqlite3")

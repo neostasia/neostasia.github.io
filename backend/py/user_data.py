@@ -23,7 +23,7 @@ app = Flask(__name__)
 CORS(app)  # Allow cross-origin requests for all routes
 
 """
-flask --app ./assets/py/user_data.py --debug run 
+flask --app ./backend/py/user_data.py --debug run 
 """
 
 @app.route('/save_contact_request', methods=['POST'])

@@ -16,7 +16,7 @@ body {
 }
 
 footer {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 100%;
 }
 
@@ -37,6 +37,11 @@ h3 {
 
 i {
     padding: 5px;
+}
+
+.side-padding-container {
+    padding: 0 80px 0 80px;
+    margin-right: 0px;
 }
 
 .paragraph {
@@ -76,14 +81,48 @@ ul {
     font-weight: 600;
 }
 
+#hero {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #D0D1D2;
+    border-bottom: 5px solid #99c23b;
+    background-image: linear-gradient(#D0D1D2 80%, #9D9E9F);
+}
+/*   
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 40%;
+    height: 100%;
+    background-color: #eeeeee;
+    transform: skewX(15deg);
+    z-index: 9;
+    opacity: 50%;
+} */
 
 #hero-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 99;
 }
 
 #hero-image:hover {
     transform: scale(1.01);
     transition-duration: 0.2s;
+}
+
+#hero-text {
+    padding: 20px;
+}
+
+#hero-text p {
+    text-indent: 2em;
+}
+
+#get-started {
+    padding-top: 20px;
 }
 
 /**************************************************************\
@@ -102,6 +141,19 @@ ul {
     font-size: 15px;
 }
 
+.element-ns {
+    background-color: #99c23b;
+    color: black;    
+}
+
+.btn-ns {
+    background-color: #99c23b;
+    color: black;
+}
+
+.btn-ns:hover {
+    background-color: #80A922;
+}
 
 .contact-link {
     text-decoration: none;
@@ -145,13 +197,13 @@ ul {
     margin: 0px;
     padding: 8px 20px 5px 20px;
 
-    height: 45px;
+    height: 100%;
     text-align: left;
 
     border-radius: 0px;
     border: 2px solid rgb(255, 255, 255);
 
-    background-color: rgb(228, 229, 230);
+    background-color: #eeeeee;
 }
 
 .list-group-item a {
@@ -177,7 +229,7 @@ ul {
 
 .mini-container {
     margin: 50px 10px 10px 20px;
-    border-bottom: 3px solid #198754;
+    border-bottom: 3px solid #99c23b;
     width: 50px;
     white-space: nowrap;
 }
@@ -284,12 +336,12 @@ ul {
 } */
 
 .card-img-top {
-    max-height: 200px;
     height: auto;
 }
 .card-block {
     padding: 10px 20px 10px 20px;
-    background: #19875433;
+    background: #99c23b33;
+    height: 100%;
 }
 
 .card-title {
@@ -302,22 +354,35 @@ ul {
 }
 
 .card-header {
-    background: #198754;
-    color: #fff;
+    background: #99c23b;
+    /* color: #fff; */
     font-weight: 600;
 }
 
-.card-header:hover {
+/* .card-header:hover {
     background-color: #157347;
     border-color: #146c43;
     transition-duration: 0.15s;
-}
+} */
 
 #contact-request-form button {
     margin: 10px auto;
     width: 100%;
 }
 
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    SIDEBAR
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+.sidebar {
+    background-color: #eeeeee;
+}
 
 
 /**************************************************************\
@@ -396,7 +461,7 @@ ul {
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #198754;
+    background: #99c23b;
 }
 
 .footer-widget ul {
@@ -411,11 +476,11 @@ ul {
 }
 
 .footer-widget ul li a:hover{
-    color: #198754;
+    color: #99c23b;
 }
 
 .footer-widget ul li a {
-    color: #e8e8e8;
+    color: #eeeeee;
     font-weight: 400;
     text-decoration: none;
     text-transform: capitalize;
@@ -441,7 +506,7 @@ ul {
 
 #mailing-list-form input {
     border: none;
-    background: #e8e8e8;
+    background: #eeeeee;
     border-radius: 0px;
     /* color: #fff; */
 }
@@ -453,23 +518,19 @@ ul {
 }
 
 #mailing-list-form button {
-   
-    background: #198754;
-   
     font-weight: 500;
     font-size: 16px;
     width: 120px;
 
-    color: #fff;
     border: none;
 
 } 
 
-#mailing-list-form button:hover {
+/* #mailing-list-form button:hover {
     background-color: #157347;
     border-color: #146c43;
     transition-duration: 0.15s;
-}
+} */
 
 #mailing-list-email-status {
     margin: 10px 0 0 10px;
@@ -487,7 +548,7 @@ ul {
     margin-bottom: 30px;
     color: #fff;
     font-size: 32px;
-    border-bottom: 2px solid #198754;
+    border-bottom: 2px solid #99c23b;
     font-weight: 600;
 }
 
@@ -523,7 +584,7 @@ ul {
 .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #e8e8e8;
+    color: #eeeeee;
     line-height: 28px;
 }
 
@@ -538,14 +599,14 @@ ul {
     color: #878787;
 }
 .copyright-text p a{
-    color: #198754;
+    color: #99c23b;
 }
 .footer-menu li {
     display: inline-block;
     margin-left: 20px;
 }
 .footer-menu li:hover a{
-    color: #198754;
+    color: #99c23b;
 }
 .footer-menu li a {
   font-size: 14px;

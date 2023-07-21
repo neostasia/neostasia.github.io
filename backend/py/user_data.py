@@ -87,12 +87,12 @@ def save_contact_request():
                 json.dump(data, file, indent=4)
 
         return jsonify({
-            'success': True
+            'status': 'ok'
         })
     
     except Exception as e:
         return jsonify({
-            'success': False, 
+            'status': 'error',
             'message': f'Error trying to upload contact request: {e}'
         })
     
@@ -127,8 +127,7 @@ def save_mailing_list():
         if existing_email:
             # Email already exists
             return jsonify({
-                'success': False,
-                'message': 'Email address is already signed up.'
+                'status': 'already_exists'
             })
         
         else:
@@ -140,13 +139,13 @@ def save_mailing_list():
             conn.commit()
 
             return jsonify({
-                'success': True
+                'status': 'ok'
             })
 
     except Exception as e:
         return jsonify({
-            'success': False, 
-            'message': f'Error trying to subscribe to mailing list: {e}'
+            'status': 'error',
+            'message': e
         })
     
     finally:

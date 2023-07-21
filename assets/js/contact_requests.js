@@ -57,10 +57,10 @@ contactRequestForm.addEventListener('submit', async (e) => {
 
         const responseData = await response.json(); // Parse the JSON response
 
-        if (responseData.success) {
+        if (responseData.status == 'ok') {
             alert('Query sent successfully!');
             contactRequestForm.reset();
-        } else {
+        } else if (responseData.status == 'error') {
             const errorMessage = responseData.message;
             alert(`Failed to send query. Error: ${errorMessage}`);
         }

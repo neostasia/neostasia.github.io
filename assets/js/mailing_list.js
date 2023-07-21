@@ -4,7 +4,7 @@ let maxMailingListEmailLengthError;
 
 const mailingListForm = document.getElementById('mailing-list-form');
 const emailInput = document.getElementById('mailing-list-email');
-const emailErrorElement = document.getElementById('mailing-list-email-length-error');
+const emailStatusElement = document.getElementById('mailing-list-email-status');
 
 
 // Fetch the character_limits.json file
@@ -30,7 +30,8 @@ emailInput.addEventListener('input', () => {
     const emailValue = emailInput.value;
     if (emailValue.trim() === '') {
         // If the input field is empty, clear the innerHTML
-        emailErrorElement.innerHTML = '';
+        emailStatusElement.style.color = "white";
+        emailStatusElement.innerHTML = '';
     }
 });
 
@@ -40,7 +41,8 @@ mailingListForm.addEventListener('submit', async (e) => {
     // Check if email length is within rannge
     const emailLength = emailInput.value.length;
     if (emailLength > mailingListInputLimits.email) {
-        emailErrorElement.innerHTML = maxMailingListEmailLengthError;
+        emailStatusElement.style.color = "red";
+        emailStatusElement.innerHTML = maxMailingListEmailLengthError;
         return;
     }
 
@@ -56,12 +58,21 @@ mailingListForm.addEventListener('submit', async (e) => {
 
         const responseData = await response.json(); // Parse the JSON response
 
-        if (responseData.success) {
+        if (responseData.status == 'ok') {
+            // success
             alert('Query sent successfully!');
             mailingListForm.reset();
-        } else {
+
+        } else if (responseData.status == 'already_exists') {
+            // email addr already in db
+            emailStatusElement.style.color = "white";
+            emailStatusElement.innerHTML = `Email address is already signed up`;
+
+        } else if (responseData.status == 'error') {
+            // misc error
             const errorMessage = responseData.message;
-            alert(`Failed to send query. Error: ${errorMessage}`);
+            emailStatusElement.style.color = "red";
+            emailStatusElement.innerHTML = `Failed to send query. Error: ${errorMessage}`;
         }
 
     } catch (error) {

@@ -471,9 +471,9 @@ ul {
     transition-duration: 0.15s;
 }
 
-#mailing-list-email-length-error {
+#mailing-list-email-status {
     margin: 10px 0 0 10px;
-    color: #ff0000;
+    color: #ffffff;
 }
 
 

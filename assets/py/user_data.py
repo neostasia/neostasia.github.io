@@ -42,10 +42,10 @@ def save_contact_request():
 
         # read form data from request
         # & get current unix timestamp
-        subject = cleaned_form.get('contact-request-subject')
-        full_name = cleaned_form.get('contact-request-name')
-        email = cleaned_form.get('contact-request-email').lower()
-        message = cleaned_form.get('contact-request-message')
+        subject = cleaned_form.get('contact-request-subject')[:256]
+        full_name = cleaned_form.get('contact-request-name')[:128]
+        email = cleaned_form.get('contact-request-email').lower()[:128]
+        message = cleaned_form.get('contact-request-message')[:2048]
         timestamp = unix_ts()
 
 
@@ -99,7 +99,7 @@ def save_mlist():
         cursor = conn.cursor()
 
         # gather form data (email addr, opt in, signup time)
-        email = cleaned_form.get('mlist-email').lower()
+        email = cleaned_form.get('mlist-email').lower()[:128]
         opt_in = 1
         signup_timestamp = unix_ts()
 

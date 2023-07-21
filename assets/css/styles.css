@@ -102,6 +102,7 @@ ul {
     font-size: 15px;
 }
 
+
 .contact-link {
     text-decoration: none;
 }
@@ -253,8 +254,7 @@ ul {
 \**************************************************************/
 
 .main-container {
-    margin: 50px 0 50px 0;
-    border-bottom: 3px solid rgb(182, 182, 182);   
+    width: 80%;
 }
 
 .main-content {

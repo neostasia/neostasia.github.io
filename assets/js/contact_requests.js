@@ -1,12 +1,39 @@
-const maxMessageLength = 2048;
+// Char limits in a higher scope 
+let contactRequestInputLimits;
 
 const contactRequestForm = document.getElementById('contact-request-form');
-const messageInput = document.getElementById('contact-request-message');
-const messageCharCounter = document.getElementById('contact-request-message-char-counter');
 
-messageInput.addEventListener('input', () => {
-    const messageValue = messageInput.value;
-    messageCharCounter.innerHTML = `${messageValue.length}/${maxMessageLength}`;
+// Get the form elements by their IDs
+const contactRequestSubjectInput = document.getElementById('contact-request-subject');
+const contactRequestNameInput = document.getElementById('contact-request-name');
+const contactRequestEmailInput = document.getElementById('contact-request-email');
+const contactRequestMessageInput = document.getElementById('contact-request-message');
+
+const contactRequestMessageCharCounter = document.getElementById('contact-request-message-char-counter');
+
+
+
+// Fetch the character_limits.json file
+fetch('./backend/config/character_limits.json')
+    .then((response) => response.json())
+    .then((data) => {
+        // Get the character limits for contact_requests
+        contactRequestInputLimits = data.contact_requests;
+
+        // Set the maxlength attribute for each input element
+        contactRequestSubjectInput.setAttribute('maxlength', contactRequestInputLimits.subject);
+        contactRequestNameInput.setAttribute('maxlength', contactRequestInputLimits.name);
+        contactRequestEmailInput.setAttribute('maxlength', contactRequestInputLimits.email);
+        contactRequestMessageInput.setAttribute('maxlength', contactRequestInputLimits.message);
+    })
+    .catch((error) => {
+            console.error('Error loading character_limits.json:', error);
+    });
+
+
+contactRequestMessageInput.addEventListener('input', () => {
+    const messageValue = contactRequestMessageInput.value;
+    contactRequestMessageCharCounter.innerHTML = `${messageValue.length}/${contactRequestInputLimits.message}`;
 });
 
 contactRequestForm.addEventListener('submit', async (e) => {
@@ -32,7 +59,7 @@ contactRequestForm.addEventListener('submit', async (e) => {
 
         if (responseData.success) {
             alert('Query sent successfully!');
-            mlistForm.reset();
+            contactRequestForm.reset();
         } else {
             const errorMessage = responseData.message;
             alert(`Failed to send query. Error: ${errorMessage}`);

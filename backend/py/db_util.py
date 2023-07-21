@@ -1,3 +1,4 @@
+import json
 import sqlite3
 
 accepted_confirmations = ["yes", "y"]
@@ -80,8 +81,12 @@ def truncate_table(conn, table_name, rows=None):
         print(f'Error truncating table: {e}')
         return False
 
+def load_character_limits():
+    with open('./backend/config/character_limits.json') as f:
+        character_limits = json.load(f)
 
-
+    return character_limits
+    
 
 """
 python3 ./backend/py/db_util.py

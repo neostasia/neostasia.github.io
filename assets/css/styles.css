@@ -432,27 +432,27 @@ ul {
 \**************************************************************/
 
 
-#mlist-form {
+#mailing-list-form {
     display: flex;
     position: relative;
     border-radius: 0px;
     height: 50px;
 }
 
-#mlist-form input {
+#mailing-list-form input {
     border: none;
     background: #e8e8e8;
     border-radius: 0px;
     /* color: #fff; */
 }
 
-#mlist-form input:focus {
+#mailing-list-form input:focus {
     outline: none;
     filter: brightness(110%);
     transition-duration: 0.2s;
 }
 
-#mlist-form button {
+#mailing-list-form button {
    
     background: #198754;
    
@@ -465,19 +465,19 @@ ul {
 
 } 
 
-#mlist-form button:hover {
+#mailing-list-form button:hover {
     background-color: #157347;
     border-color: #146c43;
     transition-duration: 0.15s;
 }
 
-#mlist-email-length-error {
+#mailing-list-email-length-error {
     margin: 10px 0 0 10px;
     color: #ff0000;
 }
 
 
-/* #mlist-form button i {
+/* #mailing-list-form button i {
     color: #fff;
     font-size: 22px;
     transform: rotate(-6deg);

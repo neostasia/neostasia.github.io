@@ -1,0 +1,12 @@
+{
+    "contact_requests": {
+        "subject": 256,
+        "name": 128,
+        "email": 128,
+        "message": 2048
+    },
+
+    "mailing_list": {
+        "email": 128
+    }
+}

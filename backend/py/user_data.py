@@ -8,6 +8,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 from util import unix_ts, sanitize_inputs
+from db_util import load_character_limits
 
 # Custom Flask class for running functions before app
 # class FlaskMod(Flask):
@@ -28,6 +29,9 @@ flask --app ./backend/py/user_data.py --debug run
 
 @app.route('/save_contact_request', methods=['POST'])
 def save_contact_request():
+    # load char limit configs
+    character_limits = load_character_limits()
+
     # sanitize input
     cleaned_form = sanitize_inputs(request.form)
 
@@ -41,11 +45,18 @@ def save_contact_request():
         cursor = conn.cursor()
 
         # read form data from request
-        # & get current unix timestamp
-        subject = cleaned_form.get('contact-request-subject')[:256]
-        full_name = cleaned_form.get('contact-request-name')[:128]
-        email = cleaned_form.get('contact-request-email').lower()[:128]
-        message = cleaned_form.get('contact-request-message')[:2048]
+        subject =   cleaned_form.get('contact-request-subject')
+        full_name = cleaned_form.get('contact-request-name')
+        email =     cleaned_form.get('contact-request-email').lower()
+        message =   cleaned_form.get('contact-request-message')
+
+        # force character limits in case user attempts to modify js scripts
+        subject =   subject[:character_limits["contact_requests"]["subject"]]
+        full_name = full_name[:character_limits["contact_requests"]["name"]]
+        email =     email[:character_limits["contact_requests"]["email"]]
+        message =   message[:character_limits["contact_requests"]["message"]]
+
+        # get current unix timestamp
         timestamp = unix_ts()
 
 
@@ -88,8 +99,11 @@ def save_contact_request():
     finally:
         conn.close()
 
-@app.route('/save_mlist', methods=['POST'])
-def save_mlist():
+@app.route('/save_mailing_list', methods=['POST'])
+def save_mailing_list():
+    # load char limit configs
+    character_limits = load_character_limits()
+
     # sanitize inputs
     cleaned_form = sanitize_inputs(request.form)
 
@@ -99,9 +113,12 @@ def save_mlist():
         cursor = conn.cursor()
 
         # gather form data (email addr, opt in, signup time)
-        email = cleaned_form.get('mlist-email').lower()[:128]
+        email = cleaned_form.get('mailing-list-email').lower()
         opt_in = 1
         signup_timestamp = unix_ts()
+
+        # force character limits in case user attempts to modify js scripts
+        email = email[:character_limits["mailing_list"]["email"]]
 
         # Check if the email already exists in the db
         cursor.execute("SELECT email FROM mailing_list WHERE email=?", (email,))
@@ -111,7 +128,7 @@ def save_mlist():
             # Email already exists
             return jsonify({
                 'success': False,
-                'message': 'Email address already exists in the mailing list.'
+                'message': 'Email address is already signed up.'
             })
         
         else:

@@ -74,7 +74,7 @@
     
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-ns" type="submit">Search</button>
+                    <button class="btn ns-green ns-green-hoverable" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -86,7 +86,7 @@
 
      
     <div id="hero">
-        <div class="row hero-row flex-lg flex-row-reverse align-items-center">
+        <div class="row hero-row flex-row-reverse">
             <div class="col-lg-6 hero-image-class">
                 <img id="hero-image" class="d-block mx-lg-auto img-fluid" src="./assets/images/hero_image.jpg"  alt="" loading="lazy">
             </div>
@@ -94,7 +94,7 @@
             <div id="hero-text" class="col-lg-6">
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                        <h1 class="fw-bold display-4">Some normal text</h2>
+                        <h1 class="fw-bold display-4 hero-header">We copy website templates from other people and slap some text on it and call it a day.</h2>
                     </div>
                 </div>
     
@@ -113,11 +113,11 @@
                 </div>
     
                 <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a class="btn btn-ns-dark btn-hero px-4 me-md-2" href="#get-started" role="button">
+                    <a class="btn ns-green-dark ns-green-dark-hoverable btn-hero px-4 me-md-2" href="#get-started" role="button">
                         Start
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
-                    <a class="btn btn-ns btn-hero px-4 text-black" href="about.html" role="button">
+                    <a class="btn ns-green ns-green-hoverable btn-hero px-4 text-black" href="about.html" role="button">
                         Learn More
                     </a>
                 </div>
@@ -131,20 +131,20 @@
     <div class="side-padding-container row">
 
         <!-- Main -->
-        <div class="col-md-9">
+        <div class="col-md">
             <!-- Get Started -->
 
             <div id="get-started" class="container">
                 <div class="mini-container">
-                    <h1>Get Started</h1>
+                    <h1 class="fw-bold display-5">Get Started</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 card-col">
                         <div class="card">
                         
-                            <img class="card-img-top img-fluid" src="./assets/images/information_1.jpg" alt="Card image cap">
+                            <!-- <img class="card-img-top img-fluid" src="./assets/images/information_1.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Dangers</h5>
+                                <h5 class="card-title">Dangers ⚠️</h5>
                                 <p class="card-text">Few lines of text not too long</p>
                             </div>
 
@@ -154,13 +154,13 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a href="#">Cyberbullying</a>
+                                    <a href="#">What are the forms of cyberbullying?</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">Cybersecurity</a>
+                                    <a href="#">How do scammers trick people?</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">Predatory Behaviors</a>
+                                    <a href="#">Where are predatory behaviors most common?</a>
                                 </li>
                                 <li class="list-group-item important">
                                     <a href="#">View All</a>
@@ -173,9 +173,9 @@
                     <div class="col-sm-4">
                         <div class="card">
                         
-                            <img class="card-img-top img-fluid" src="./assets/images/information_2.jpg" alt="Card image cap">
+                            <!-- <img class="card-img-top img-fluid" src="./assets/images/information_2.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Prevention</h5>
+                                <h5 class="card-title">Prevention ✋</h5>
                                 <p class="card-text">Few lines of text not long</p>
                             </div>
 
@@ -185,13 +185,13 @@
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a href="#">10 Tips to Evade Cyberbullying</a>
+                                    <a href="#">What should I do if someone online is mean to me?</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">How to Identify Scams</a>
+                                    <a href="#">How do I create a strong and secure password?</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">Talking to Internet Strangers</a>
+                                    <a href="#">What should I watch out for in a chat room?</a>
                                 </li>
                                 <li class="list-group-item important">
                                     <a href="#">View All</a>
@@ -204,9 +204,9 @@
                     <div class="col-sm-4">
                         <div class="card">
                         
-                            <img class="card-img-top img-fluid" src="./assets/images/information_3.jpg" alt="Card image cap">
+                            <!-- <img class="card-img-top img-fluid" src="./assets/images/information_3.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Experiences</h5>
+                                <h5 class="card-title">Experiences 💬</h5>
                                 <p class="card-text">Few lines of text</p>
                             </div>
 
@@ -241,7 +241,7 @@
             <!-- Featured -->
             <div class="container">
                 <div class="mini-container">
-                    <h1>Featured Article</h1>
+                    <h1 class="fw-bold display-5">Featured Article</h1>
                 </div>
                 <div class="featured-container">
                     
@@ -264,11 +264,28 @@
 
         <!-- Sidebar -->
 
-        <div class="col-md-3 sidebar">
-            <div class="mini-container">
-                <h2>Popular Pages</h2>
+        <!-- <div class="col-md-3 sidebar">
+            <div class="contents-navigation">
+                <div class="mini-container">
+                    <h2>Sections</h2>
+                </div>
+                <div class="sidebar-list">
+                    <ul class="list-group list-group-flush">
+                        <li class="sidebar-list-item">
+                            <a href="#">Cyberbullying</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="#">Cybersecurity</a>
+                        </li>
+                        <li class="sidebar-list-item">
+                            <a href="#">Predatory Behaviors</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
+            
+        </div> -->
 
     </div>
     
@@ -352,7 +369,7 @@
                             
                                 <input class="form-control" type="email" name="mailing-list-email" id="mailing-list-email" placeholder="Email address" required>
 
-                                <button class="btn-ns-dark" type="submit">Sign Up</button>
+                                <button class="ns-green-dark ns-green-dark-hoverable" type="submit">Sign Up</button>
 
                             </form>
                             <div id="mailing-list-email-status"></div>

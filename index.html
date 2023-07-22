@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a id="brand" class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
                 <img class="navbar-logo" src="./assets/images/ns_logo.png" alt="Navbar Logo"></img>
                 Neostasia
             </a>
@@ -86,11 +86,11 @@
 
      
     <div id="hero">
-        <div class="side-padding-container row flex-lg align-items-center">
+        <div class="row flex-lg align-items-center">
             <div id="hero-text" class="col-lg-5">
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                        <h2 class="fw-bold display-6">Welcome to Neostasia</h2>
+                        <h1 class="fw-bold display-4">Some normal text</h2>
                     </div>
                 </div>
     
@@ -109,8 +109,13 @@
                 </div>
     
                 <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a class="btn btn-ns px-4 me-md-2" href="#get-started" role="button">Start</a>
-                    <a class="btn btn-outline-secondary px-4 text-black bg-light" href="about.html" role="button">Learn More</a>
+                    <a class="btn btn-ns-dark btn-hero px-4 me-md-2" href="#get-started" role="button">
+                        Start
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <a class="btn btn-ns btn-hero px-4 text-black" href="about.html" role="button">
+                        Learn More
+                    </a>
                 </div>
             </div>
         
@@ -348,7 +353,7 @@
                             
                                 <input class="form-control" type="email" name="mailing-list-email" id="mailing-list-email" placeholder="Email address" required>
 
-                                <button class="btn-ns" type="submit">Sign Up</button>
+                                <button class="btn-ns-dark" type="submit">Sign Up</button>
 
                             </form>
                             <div id="mailing-list-email-status"></div>

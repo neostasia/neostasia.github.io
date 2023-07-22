@@ -39,17 +39,6 @@ i {
     padding: 5px;
 }
 
-.side-padding-container {
-    padding: 0 80px 0 80px;
-    margin-right: 0px;
-}
-
-.paragraph {
-    text-indent: 2em;
-    font-size: 14px;
-    padding-left: 30px;
-}
-
 p {
     margin: 10px;
 }
@@ -65,29 +54,77 @@ ul {
     padding: 0px;
 }
 
+
 /**************************************************************\
 |==============================================================|
 |==============================================================|
 |====/
-|====|    IDENTIFIERS
+|====|    NAVBAR
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+.navbar {
+    height: 100px;
+    border-bottom: 3px solid rgb(182, 182, 182);   
+    position: relative;
+}
+
+.navbar-logo {
+    margin: 0 15px 0 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+
+.navbar-text {
+    margin-left: 10%;
+    margin-right: 10%;
+    bottom: 0;
+}
+
+.nav-item {
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: 20px;
+        padding: 25px;
+        border: 3px solid rgb(182, 182, 182);
+    }
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    HERO
 |====\
 |==============================================================|
 |==============================================================|
 \**************************************************************/
 
 
-#brand {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 #hero {
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
     background-color: #D0D1D2;
-    border-bottom: 5px solid #99c23b;
+    /* border-bottom: 5px solid #99c23b; */
     background-image: linear-gradient(#D0D1D2 80%, #9D9E9F);
+    border-bottom: 3px solid rgb(182, 182, 182);   
 }
 /*   
 #hero::after {
@@ -104,42 +141,33 @@ ul {
 } */
 
 #hero-image {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    height: 100%;
     z-index: 99;
 }
 
-#hero-image:hover {
+/* #hero-image:hover {
     transform: scale(1.01);
     transition-duration: 0.2s;
-}
+} */
 
 #hero-text {
-    padding: 20px;
+    padding: 50px;
 }
 
 #hero-text p {
     text-indent: 2em;
 }
 
-#get-started {
-    padding-top: 20px;
-}
-
 /**************************************************************\
 |==============================================================|
 |==============================================================|
 |====/
-|====|    CLASSES
+|====|    BUTTONS
 |====\
 |==============================================================|
 |==============================================================|
 \**************************************************************/
-
-
-.block {
-    margin-left: 20px;
-    font-size: 15px;
-}
 
 .element-ns {
     background-color: #99c23b;
@@ -154,6 +182,52 @@ ul {
 .btn-ns:hover {
     background-color: #80A922;
 }
+
+.btn-ns-dark {
+    background-color: #4D7600;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-ns-dark:hover {
+    background-color: #335C00;
+    color: white;
+}
+
+
+.btn-hero {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    MISC
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+
+.side-padding-container {
+    padding: 0 80px 0 80px;
+    margin-right: 0px;
+}
+
+.paragraph {
+    text-indent: 2em;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+
+
+
+#get-started {
+    padding-top: 20px;
+}
+
 
 .contact-link {
     text-decoration: none;
@@ -254,47 +328,6 @@ ul {
     text-indent: 2em;
 }
 
-/**************************************************************\
-|==============================================================|
-|==============================================================|
-|====/
-|====|    NAVBAR
-|====\
-|==============================================================|
-|==============================================================|
-\**************************************************************/
-
-.navbar {
-    height: 100px;
-    border-bottom: 3px solid rgb(182, 182, 182);   
-    position: relative;
-}
-
-.navbar-logo {
-    margin: 0 15px 0 0;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-}
-
-
-.navbar-text {
-    margin-left: 10%;
-    margin-right: 10%;
-    bottom: 0;
-}
-
-.nav-item:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        margin-top: 20px;
-        padding: 25px;
-        border: 3px solid rgb(182, 182, 182);
-    }
-}
 /**************************************************************\
 |==============================================================|
 |==============================================================|
@@ -486,64 +519,6 @@ ul {
     text-transform: capitalize;
 }
 
-/**************************************************************\
-|==============================================================|
-|==============================================================|
-|====/
-|====|    MAILING LIST
-|====\
-|==============================================================|
-|==============================================================|
-\**************************************************************/
-
-
-#mailing-list-form {
-    display: flex;
-    position: relative;
-    border-radius: 0px;
-    height: 50px;
-}
-
-#mailing-list-form input {
-    border: none;
-    background: #eeeeee;
-    border-radius: 0px;
-    /* color: #fff; */
-}
-
-#mailing-list-form input:focus {
-    outline: none;
-    filter: brightness(110%);
-    transition-duration: 0.2s;
-}
-
-#mailing-list-form button {
-    font-weight: 500;
-    font-size: 16px;
-    width: 120px;
-
-    border: none;
-
-} 
-
-/* #mailing-list-form button:hover {
-    background-color: #157347;
-    border-color: #146c43;
-    transition-duration: 0.15s;
-} */
-
-#mailing-list-email-status {
-    margin: 10px 0 0 10px;
-    color: #ffffff;
-}
-
-
-/* #mailing-list-form button i {
-    color: #fff;
-    font-size: 22px;
-    transform: rotate(-6deg);
-} */
-
 /* .footer-logo {
     margin-bottom: 30px;
     color: #fff;
@@ -556,12 +531,6 @@ ul {
     max-width: 64px;
     margin: 20px;
 } */
-
-
-
-
-
-
 
 .footer-section {
     background: #151414;
@@ -612,3 +581,61 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+
+
+/**************************************************************\
+|==============================================================|
+|==============================================================|
+|====/
+|====|    FOOTER MAILING LIST
+|====\
+|==============================================================|
+|==============================================================|
+\**************************************************************/
+
+
+#mailing-list-form {
+    display: flex;
+    position: relative;
+    border-radius: 0px;
+    height: 50px;
+}
+
+#mailing-list-form input {
+    border: none;
+    background: #eeeeee;
+    border-radius: 0px;
+    /* color: #fff; */
+}
+
+#mailing-list-form input:focus {
+    outline: none;
+    filter: brightness(110%);
+    transition-duration: 0.2s;
+}
+
+#mailing-list-form button {
+    font-size: 16px;
+    width: 120px;
+
+    border: none;
+
+} 
+
+/* #mailing-list-form button:hover {
+    background-color: #157347;
+    border-color: #146c43;
+    transition-duration: 0.15s;
+} */
+
+#mailing-list-email-status {
+    margin: 10px 0 0 10px;
+    color: #ffffff;
+}
+
+
+/* #mailing-list-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+} */

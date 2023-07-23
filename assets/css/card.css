@@ -37,6 +37,7 @@
 }
 
 .card-highlighted-text {
+    padding: 8px 16px;
     background: #99c23b;
     /* color: #fff; */
     font-weight: 600;

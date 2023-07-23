@@ -28,9 +28,8 @@
     padding-bottom: 200px;
 }
 
-.hero-image-class {
+.hero-image-wrapper {
     padding: 0px;
-    background: linear-gradient(45deg, #458083 25%, #BEFCFF 25% 50%, #005258 50% 75%, #99C23B 75%);
 }
 
 .hero-image {

@@ -3,3 +3,6 @@ A derivative of https://codepen.io/baahubali92/pen/KbRBxJ
 
 Contact form: 
 Modified from https://codepen.io/tutsplus/pen/qBxPXZZ
+
+Blog:
+Modified from https://codepen.io/frontendtutorialbd/pen/YzyYZwo

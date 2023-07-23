@@ -1,0 +1,44 @@
+
+#mailing-list-form {
+    display: flex;
+    position: relative;
+    border-radius: 0px;
+    height: 60px;
+}
+
+#mailing-list-form input {
+    border: none;
+    background: #eeeeee;
+    border-radius: 0px;
+    font-size: 20px;
+    /* color: #fff; */
+}
+
+#mailing-list-form input:focus {
+    outline: none;
+    filter: brightness(110%);
+    transition-duration: 0.2s;
+}
+
+#mailing-list-form button {
+    width: 40%;
+    border: none;
+} 
+
+/* #mailing-list-form button:hover {
+    background-color: #157347;
+    border-color: #146c43;
+    transition-duration: 0.15s;
+} */
+
+#mailing-list-email-status {
+    margin: 10px 0 0 10px;
+    color: #ffffff;
+}
+
+
+/* #mailing-list-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+} */

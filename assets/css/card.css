@@ -1,0 +1,92 @@
+.card-col {
+    margin: 20px 0 20px 0;
+}
+
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin: 0px;
+}
+
+/* .card:hover {
+    bottom: 5px;
+} */
+
+.card-block {
+    padding: 0;
+}
+
+.card-block h3 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.card-img-top {
+    height: auto;
+}
+
+.card-title {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.card-text {
+    font-size: 18px;
+    padding: 20px 80px 20px 20px;
+    margin: 0;
+    text-indent: 2em;
+}
+
+.card-highlighted-text {
+    background: #99c23b;
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* .card-highlighted-text:hover {
+    background-color: #157347;
+    border-color: #146c43;
+    transition-duration: 0.15s;
+} */
+
+
+.list-group {
+    /* padding: 5px 20px 5px 20px; */
+    border-radius: 0px;
+    
+}
+
+.list-group-item {
+    margin: 0px;
+    padding: 20px 80px 20px 20px;
+
+    height: 100%;
+    text-align: left;
+    font-size: 20px;
+
+    border-radius: 0px;
+    border: none;
+
+    background-color: #ffffff;
+}
+
+.list-group-item a {
+    color: #151414;
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+/* .list-group-item:hover {
+    background: #d4d4d4;
+    transform: scale(1.01);
+    transition-duration: 0.15s;
+} */
+
+.important {
+    font-weight: 600;
+    text-decoration: underline;
+}

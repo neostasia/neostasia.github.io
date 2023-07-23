@@ -17,12 +17,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/mailing_list.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-    
-  
+
     <link rel="icon" type="image/x-icon" href="./assets/images/ns_logo.png">
     <link rel="canonical" href="/">
     
@@ -85,13 +92,13 @@
     <!-- Hero -->
 
      
-    <div id="hero">
+    <div class="hero side-padding-container ns-bg-gray-3">
         <div class="row hero-row flex-row-reverse">
-            <div class="col-lg-6 hero-image-class">
-                <img id="hero-image" class="d-block mx-lg-auto img-fluid" src="./assets/images/hero_image.jpg"  alt="" loading="lazy">
+            <div class="col-lg-6 hero-image-class ns-green-dark">
+                <img class="hero-image d-block mx-lg-auto img-fluid" src="./assets/images/hero_image.jpg"  alt="" loading="lazy">
             </div>
 
-            <div id="hero-text" class="col-lg-6">
+            <div class="hero-text col-lg-6 ns-bg-gray-2">
                 <div class="lc-block mb-3">
                     <div editable="rich">
                         <h1 class="fw-bold display-4 hero-header">We copy website templates from other people and slap some text on it and call it a day.</h2>
@@ -128,38 +135,43 @@
      
 
 
-    <div class="side-padding-container row">
+    <div class="row">
 
         <!-- Main -->
         <div class="col-md">
             <!-- Get Started -->
 
-            <div id="get-started" class="container">
+            <div id="get-started" class="side-padding-container main-section ns-bg-gray-3">
                 <div class="mini-container">
                     <h1 class="fw-bold display-5">Get Started</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 card-col">
+                    <div class="col-md-3 card-col">
                         <div class="card">
                         
                             <!-- <img class="card-img-top img-fluid" src="./assets/images/information_1.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Dangers ⚠️</h5>
-                                <p class="card-text">Few lines of text not too long</p>
+                                <h3 class="card-title ns-green-dark">
+                                    Dangers
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                </h3>
+                                <p class="card-text">The internet is a big place. Find out what your child might be exposed to.</p>
                             </div>
 
-                            <div class="card-header element-ns">
+                            <div class="card-highlighted-text element-ns">
                                 Learn More
-                                <i class="fa-solid fa-arrow-down"></i>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">What are the forms of cyberbullying?</a>
                                 </li>
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">How do scammers trick people?</a>
                                 </li>
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">Where are predatory behaviors most common?</a>
                                 </li>
                                 <li class="list-group-item important">
@@ -170,27 +182,32 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-md-3 card-col">
                         <div class="card">
                         
                             <!-- <img class="card-img-top img-fluid" src="./assets/images/information_2.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Prevention ✋</h5>
-                                <p class="card-text">Few lines of text not long</p>
+                                <h3 class="card-title ns-green-dark">
+                                    Prevention
+                                    <i class="fa-solid fa-hand"></i>
+                                </h3>
+                                <p class="card-text">Find out how you can deal with potential dangers to make sure your child can enjoy using social media, online gaming and the internet safely.</p>
                             </div>
 
-                            <div class="card-header element-ns">
+                            <div class="card-highlighted-text element-ns">
                                 Learn More
-                                <i class="fa-solid fa-arrow-down"></i>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">What should I do if someone online is mean to me?</a>
                                 </li>
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">How do I create a strong and secure password?</a>
                                 </li>
                                 <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
                                     <a href="#">What should I watch out for in a chat room?</a>
                                 </li>
                                 <li class="list-group-item important">
@@ -201,28 +218,33 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-md-3 card-col">
                         <div class="card">
                         
                             <!-- <img class="card-img-top img-fluid" src="./assets/images/information_3.jpg" alt="Card image cap"> -->
                             <div class="card-block">
-                                <h5 class="card-title">Experiences 💬</h5>
-                                <p class="card-text">Few lines of text</p>
+                                <h3 class="card-title ns-green-dark">
+                                    Experiences 
+                                    <i class="fas fa-comment"></i>
+                                </h3>
+                                <p class="card-text">Hear about the chilling experiences of those who have been a victim of threatened internet safety.</p>
                             </div>
 
-                            <div class="card-header element-ns">
+                            <div class="card-highlighted-text element-ns">
                                 Learn More
-                                <i class="fa-solid fa-arrow-down"></i>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a href="#">List Item 1</a>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">TBD</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">List Item 2</a>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">TBD</a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a href="#">List Item 3</a>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">TBD</a>
                                 </li>
                                 
                                 <li class="list-group-item important">
@@ -232,14 +254,152 @@
                         </div>
                     </div>
                 
-                
+                    <div class="col-md-3 card-col">
+                        <div class="card">
+                        
+                            <!-- <img class="card-img-top img-fluid" src="./assets/images/information_3.jpg" alt="Card image cap"> -->
+                            <div class="card-block">
+                                <h3 class="card-title ns-green-dark">
+                                    Training Course 
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </h3>
+                                <p class="card-text">Play games on internet safety awareness, learn to handle real world-like situations, take quizzes and earn certificates.</p>
+                            </div>
+
+                            <div class="card-highlighted-text element-ns">
+                                Learn More
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">Games</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">Situations</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="#">Certificate Quiz</a>
+                                </li>
+                                
+                                <li class="list-group-item important">
+                                    <a href="#">View All</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <hr class="hr-bold">
+            <!-- Blog -->
+            <div id="blog" class="side-padding-container main-section ns-bg-gray-1">
+                <div class="mini-container">
+                    <h1 class="fw-bold display-5">Blog</h1>
+                </div>
+                <div class="latest-blog-area pt-80 pb-120 gray-bg">
+                    <div class="container">
+                      <div class="custom-row">
+                        <div class="blog-active dot-style">
+                          <div class="col-xl-12 col-lg-12">
+                            <div class="blog-wrapper">
+                              <div class="blog-inner">
+                                <span class="tag-blog"><a href="#">News</a></span>
+                                <h4><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                                <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius mod tempor incididunt utab.</p>
+                                <div class="blog-meta">
+                                  <span class="f-left">
+                                    Feb 22, 2017
+                                  </span>
+                                  <span class="f-right blog-more-btn">
+                                    <a href="blog-details.html"><i class="fas fa-long-arrow-alt-right"></i> <span class="blog-more"> More</span></a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xl-12 col-lg-12">
+                            <div class="blog-wrapper">
+                              <div class="blog-inner">
+                                <span class="tag-blog"><a href="#">News</a></span>
+                                <h4><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                                <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius mod tempor incididunt utab.</p>
+                                <div class="blog-meta">
+                                  <span class="f-left">
+                                    Feb 22, 2017
+                                  </span>
+                                  <span class="f-right blog-more-btn">
+                                    <a href="blog-details.html"><i class="fas fa-long-arrow-alt-right"></i> <span class="blog-more"> More</span></a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xl-12 col-lg-12">
+                            <div class="blog-wrapper">
+                              <div class="blog-inner">
+                                <span class="tag-blog"><a href="#">News</a></span>
+                                <h4><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                                <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius mod tempor incididunt utab.</p>
+                                <div class="blog-meta">
+                                  <span class="f-left">
+                                    Feb 22, 2017
+                                  </span>
+                                  <span class="f-right blog-more-btn">
+                                    <a href="blog-details.html"><i class="fas fa-long-arrow-alt-right"></i> <span class="blog-more"> More</span></a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xl-12 col-lg-12">
+                            <div class="blog-wrapper">
+                              <div class="blog-inner">
+                                <span class="tag-blog"><a href="#">News</a></span>
+                                <h4><a href="#">Four ways to cheer yourself up on Blue Monday!</a></h4>
+                                <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius mod tempor incididunt utab.</p>
+                                <div class="blog-meta">
+                                  <span class="f-left">
+                                    Feb 22, 2017
+                                  </span>
+                                  <span class="f-right blog-more-btn">
+                                    <a href="blog-details.html"><i class="fas fa-long-arrow-alt-right"></i> <span class="blog-more"> More</span></a>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            
+            <!-- Another Panel -->
+            <div class="side-padding-container main-section ns-bg-gray-3">
+                <div class="mini-container">
+                    <h1 class="fw-bold display-5">Another Panel</h1>
+                </div>
+                <div class="featured-container">
+                    
+                    <h2>h2 text</h2>
+                    <div class="row featured-content">
+                        <div class="col-md-4">
+                            <img class="featured-img" src="./assets/images/information_1.jpg" alt="Founders">
+                        </div>
+                        <div class="featured-text col-md-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Featured -->
-            <div class="container">
+            <div id="featured-article" class="side-padding-container main-section ns-bg-gray-1">
                 <div class="mini-container">
                     <h1 class="fw-bold display-5">Featured Article</h1>
                 </div>
@@ -250,9 +410,11 @@
                         <div class="featured-text col-md-8">
                             <p>We are Team CaSe (<bold>Ca</bold>rrot & <bold>Se</bold>ggie), a private non-profit organization focused on architecture equipment. Founded in Denver, Colorado in 2004, we have since then went on to provide the public much needed home improvement tools.</p>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a class="btn ns-green-dark ns-green-dark-hoverable btn-hero px-4 me-md-2" href="about.html" role="button">
+                                Read More
+                            </a>
                         </div>
                         <div class="col-md-4">
                             <img class="featured-img" src="./assets/images/featured/featured_image.jpg" alt="Founders">
@@ -260,6 +422,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Sidebar -->
@@ -407,6 +570,15 @@
 
     <!-- Scripts -->
     <script src="./assets/js/mailing_list.js"></script>
+    <!-- <script src="./assets/js/blog_swiper.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+ -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>

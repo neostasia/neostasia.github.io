@@ -1,0 +1,122 @@
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+a, button {
+    color: #1696e7;
+    outline: medium none;
+}
+a, .button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+a:focus, a:hover {
+    color: #2B96CC;
+    text-decoration: none;
+}
+
+
+.pt-80 {
+    padding-top:80px;
+}
+.pb-120 {
+    padding-bottom:120px;
+}
+.gray-bg {
+      background: #f7f7fd;
+}
+.f-left {
+    float:left;
+}
+.f-right {
+    float:right;
+}
+.blog-wrapper {
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: 0.3s;
+}
+.blog-wrapper:hover {
+    border: 1px solid transparent;
+    background: #fff;
+}
+.blog-inner {
+    overflow: hidden;
+}
+.tag-blog > a {
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    padding: 6px 20px;
+    border-radius: 30px;
+    background-color: #fbba42;
+    display: inline-block;
+}
+.blog-inner h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.blog-inner p {
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.blog-meta {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 25px;
+}
+.blog-meta span {
+    color: #646464;
+}
+.blog-meta span a {
+    color: #333;
+    font-size: 11px;
+}
+.blog-more {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 13px;
+    color: #3b3f42;
+    text-transform: uppercase;
+}
+.blog-more-btn {
+    transform: translateX(40px);
+    transition: 0.3s;
+}
+.blog-wrapper:hover .blog-more-btn {
+    transform: translateX(0px);
+}
+.custom-row {
+    margin: 0 -15px;
+}
+.dot-style .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: -60px;
+}
+.dot-style .slick-dots > li {
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 0;
+}
+.dot-style .slick-dots > li.slick-active button {
+    background: #adadb0;
+ }
+.dot-style .slick-dots button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #adadb0;
+    text-indent: -10000px;
+    padding: 0;
+}

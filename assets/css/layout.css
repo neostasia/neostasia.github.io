@@ -41,7 +41,10 @@ ul {
     padding: 0px;
 }
 
-
+.row {
+    margin: 0;
+    padding: 0;
+}
 
 .side-padding-container {
     padding: 0 150px;
@@ -75,10 +78,17 @@ ul {
 
 .title-container {
     margin: 50px 0 20px 0;
-    padding: 0;
-    border-bottom: 5px solid #4D7600;
-    width: 50px;
+    padding: 20px;
     white-space: nowrap;
+    width: max-content;
+}
+
+.title-container:after {
+    content: "";
+    background: #4D7600;
+    position: absolute;
+    height: 5px;
+    width: 75px;
 }
 
 .featured-container {
@@ -93,7 +103,6 @@ ul {
     margin: 20px auto;
     width: 90%;
     border: 3px solid rgb(158, 158, 158);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%)
 }
 

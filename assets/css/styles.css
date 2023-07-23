@@ -66,3 +66,7 @@
 .ns-bg-palette-2-315 {
     background: linear-gradient(315deg, #005258 20%, #ECF5CE 20% 50%, #778551 50% 80%, #99C23B 80%);
 }
+
+.ns-shadow-1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

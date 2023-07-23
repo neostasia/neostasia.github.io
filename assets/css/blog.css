@@ -2,21 +2,23 @@
     background: linear-gradient(45deg, #458083 25%, #BEFCFF 25% 50%, #005258 50% 75%, #99C23B 75%);
 } */
 
-.gray-bg {
-      background: #f7f7fd;
-}
-.f-left {
-    float:left;
-}
-.f-right {
-    float:right;
-}
 
-.latest-blog-area {
+.blog-area-block {
     margin: 20px 0 20px 0;
     padding: 50px 0 50px 0;
 }
 
+.blog-area-block-left p {
+    margin: 20px 40px 20px 40px;
+    padding: 50px;
+    border-radius: 10px;
+    text-indent: 2em;
+}
+
+.blog-area-img {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+}
 
 .blog-wrapper {
     margin: 20px 40px 20px 40px;
@@ -24,60 +26,50 @@
     overflow: hidden;
     border: 3px solid #00000088;
     transition: 0.15s;
-    
+    height: auto;
+    border-radius: 10px; 
 }
 .blog-wrapper:hover {
     border: 3px solid #000000;
     background: #fff;
 }
-.blog-inner {
-    overflow: hidden;
-}
-.tag-blog > a {
-    font-size: 14px;
-    color: #333;
-    line-height: 1;
-    padding: 6px 20px;
-    border-radius: 30px;
-    background-color: #fbba42;
-    display: inline-block;
-}
-.blog-inner h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    line-height: 30px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
-.blog-inner p {
-    line-height: 30px;
-    font-size: 17px;
-    margin-bottom: 30px;
-}
-.blog-meta {
-    border-top: 1px solid #e0e0e0;
-    padding-top: 25px;
-}
-.blog-meta span {
-    color: #646464;
-}
-.blog-meta span a {
-    color: #333;
-    font-size: 11px;
-}
-.blog-more {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 13px;
-    color: #3b3f42;
-    text-transform: uppercase;
-}
-.blog-more-btn {
-    transform: translateX(40px);
-    transition: 0.3s;
-}
-.blog-wrapper:hover .blog-more-btn {
-    transform: translateX(0px);
+
+.tag-blog {
+    padding: 20px 10px 20px 10px;
 }
 
+.tag-blog > a {
+    font-size: 20px;
+    color: #333;
+    line-height: 1;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.tag-blog > a:hover {
+    transform: scale(1.02);
+    transition-duration: 0.15s;
+}
+
+.blog-wrapper h4 a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.blog-wrapper h4 a:hover {
+    text-decoration: underline;
+}
+
+.blog-card-text {
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}

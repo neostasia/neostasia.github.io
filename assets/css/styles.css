@@ -194,6 +194,10 @@
     color: #6BB9E6; /* 0 */
 }
 
+.ns-text-blue-9-on-hover:hover { 
+    color: #1F6D9A; /* +30 */
+}
+
 .ns-bg-blue-palette-1-45 {
     background: linear-gradient(45deg, #8D7257 20%, #FFEBCD 20% 50%, #743600 50% 80%, #6BB9E6 80%);
 }
@@ -420,6 +424,3 @@
 
 
 
-
-
-  

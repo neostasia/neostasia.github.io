@@ -1,3 +1,6 @@
+Navbar:
+Modified from https://codepen.io/codingyaar/pen/ZEMqMrZ (this was incredibly useful. would have died from mental pain had it not been for this codepen :prayge: I express my deepest gratitude for this wonderful navbar work, good sir. thank you.)
+
 Footer:
 A derivative of https://codepen.io/baahubali92/pen/KbRBxJ
 

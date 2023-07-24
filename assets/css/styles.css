@@ -2,30 +2,32 @@
     position: relative;
 }
 
+/******************************  GREEN  ******************************/
+/* Base: Seedling #99c23b */
 
-.ns-green-light {
-    background-color: #b3dc55;
+.ns-green-5 {
+    background-color: #b3dc55; /* -10 */
     color: black;    
     font-weight: 500;  
     font-size: 20px;
 }
 
-.ns-green {
-    background-color: #99c23b;
+.ns-green-6 {
+    background-color: #99c23b; /* 0 */
     color: black;    
     font-weight: 500;  
     font-size: 20px;
 }
 
-.ns-green-hoverable:hover {
-    background-color: #80A922;
+.ns-green-6-hoverable:hover {
+    background-color: #80A922; /* +10 */
     color: black;
     font-weight: 500;   
 }
 
-.ns-green-left-underline-1::after {
+.ns-green-6-left-underline-1::after {
     content: "";
-    background: #99c23b;
+    background: #99c23b; /* 0 */
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -33,9 +35,9 @@
     width: 75px;
 }
 
-.ns-green-left-underline-2::after {
+.ns-green-6-left-underline-2::after {
     content: "";
-    background: #99c23b;
+    background: #99c23b; /* 0 */
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -43,21 +45,21 @@
     width: 50px;
 }
 
-.ns-green-dark {
-    background-color: #4D7600;
+.ns-green-9 {
+    background-color: #4D7600; /* +30 */
     color: white;
     font-weight: 600; 
     font-size: 20px;
 }
 
-.ns-green-dark-hoverable:hover {
-    background-color: #335C00;
+.ns-green-9-hoverable:hover {
+    background-color: #335C00; /* +40 */
     color: white;
 }
 
-.ns-green-dark-left-underline-1::after {
+.ns-green-9-left-underline-1::after {
     content: "";
-    background: #4D7600;
+    background: #4D7600; /* +30 */
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -65,15 +67,108 @@
     width: 75px;
 }
 
-.ns-green-dark-left-underline-2::after {
+.ns-green-9-left-underline-2::after {
     content: "";
-    background: #4D7600;
+    background: #4D7600; /* +30 */
     position: absolute;
     bottom: -15px;
     left: 0;
     height: 2px;
     width: 50px;
 }
+
+.ns-text-green-6 {
+    color: #99c23b; /* 0 */
+}
+
+.ns-text-green-6-on-hover:hover { 
+    color: #99c23b; /* 0 */
+}
+
+/******************************  BLUE  ******************************/
+/* Base: NS #6BB9E6 */
+
+.ns-blue-5 {
+    background-color: #85D3FF; /* -10 */
+    color: black;    
+    font-weight: 500;  
+    font-size: 20px;
+}
+
+.ns-blue-6 {
+    background-color: #6BB9E6; /* 0 */
+    color: black;    
+    font-weight: 500;  
+    font-size: 20px;
+}
+
+.ns-blue-6-hoverable:hover {
+    background-color: #52A0CD; /* +10 */
+    color: black;
+    font-weight: 500;   
+}
+
+.ns-blue-6-left-underline-1::after {
+    content: "";
+    background: #6BB9E6; /* 0 */
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 5px;
+    width: 75px;
+}
+
+.ns-blue-6-left-underline-2::after {
+    content: "";
+    background: #6BB9E6; /* 0 */
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+}
+
+.ns-blue-9 {
+    background-color: #1F6D9A; /* +30 */
+    color: white;
+    font-weight: 600; 
+    font-size: 20px;
+}
+
+.ns-blue-9-hoverable:hover {
+    background-color: #055380; /* +40 */
+    color: white;
+}
+
+.ns-blue-9-left-underline-1::after {
+    content: "";
+    background: #1F6D9A; /* +30 */
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 5px;
+    width: 75px;
+}
+
+.ns-blue-9-left-underline-2::after {
+    content: "";
+    background: #1F6D9A; /* +30 */
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+}
+
+.ns-text-blue-6 {
+    color: #6BB9E6; /* 0 */
+}
+
+.ns-text-blue-6-on-hover:hover { 
+    color: #6BB9E6; /* 0 */
+}
+
+/******************************  OTHER  ******************************/
 
 
 .ns-bg-white {
@@ -121,13 +216,7 @@
     color: #878787;
 }
 
-.ns-text-green {
-    color: #99c23b;
-}
 
-.ns-text-green-on-hover:hover {
-    color: #99c23b;
-}
 
 .ns-bg-black-1 {
     background-color: #202020;

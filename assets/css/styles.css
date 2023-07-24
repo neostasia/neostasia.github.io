@@ -3,7 +3,6 @@
 }
 
 
-
 .ns-green-light {
     background-color: #b3dc55;
     color: black;    
@@ -93,6 +92,11 @@
     background-color: #d0d1d2;
 }
 
+.ns-bg-gray-1-50 {
+    background-color: #f8f9fa88;
+}
+
+
 .ns-bg-gray-2-50 {
     background-color: #eeeeee88;
 }
@@ -101,6 +105,37 @@
     background-color: #d0d1d288;
 }
 
+.ns-text-gray-1 {
+    color: #f8f9fa;
+}
+
+.ns-text-gray-2 {
+    color: #eeeeee;
+}
+
+.ns-text-gray-3 {
+    color: #d0d1d2;
+}
+
+.ns-text-gray-8 {
+    color: #878787;
+}
+
+.ns-text-green {
+    color: #99c23b;
+}
+
+.ns-text-green-on-hover:hover {
+    color: #99c23b;
+}
+
+.ns-bg-black-1 {
+    background-color: #202020;
+}
+
+.ns-bg-black-2 {
+    background-color: #151414;
+}
 
 .ns-bg-palette-1-45 {
     background: linear-gradient(45deg, #458083 20%, #BEFCFF 20% 50%, #005258 50% 80%, #99C23B 80%);
@@ -129,4 +164,29 @@
 
 .ns-shadow-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.facebook-bg {
+    background: #3B5998;
+}
+
+.twitter-bg {
+    background: #55ACEE;
+}
+
+.google-bg {
+    background: #DD4B39;
+}
+
+.instagram-bg {
+    background: #dd2553;
+}
+
+.github-bg {
+    background: #333;
+}
+
+.ns-subelements-white > * {
+    color: #fff;
 }

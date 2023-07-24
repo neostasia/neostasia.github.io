@@ -1,7 +1,12 @@
 
 .navbar {
-    height: 100px;
+    height: 120px;
     position: relative;
+}
+
+.navbar-row {
+    margin: 20px;
+    height: 100%;
 }
 
 .navbar-logo {
@@ -29,6 +34,8 @@
 .navbar-brand {
     font-size: 24px;
     font-weight: 600;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media (max-width: 991px) {
@@ -37,4 +44,8 @@
         padding: 25px;
         border: 3px solid #f8f9fa;
     }
+}
+
+.search-bar {
+    padding: 10px;
 }

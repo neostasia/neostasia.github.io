@@ -4,6 +4,7 @@
     position: relative;
     border-radius: 0px;
     height: 60px;
+    width: 100%;
 }
 
 #mailing-list-form input {

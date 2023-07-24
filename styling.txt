@@ -47,4 +47,7 @@ RGB:26  67  0
 DARKENED:50%
 
 https://mycolor.space/?hex=%2399C23B&sub=1
+https://mycolor.space/?hex=%236BB9E6&sub=1
+https://mycolor.space/?hex=%23E17674&sub=1
+
 https://www.cssfontstack.com/oldsites/hexcolortool/

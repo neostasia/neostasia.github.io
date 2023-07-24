@@ -1,7 +1,4 @@
-/* #blog {
-    background: linear-gradient(45deg, #458083 25%, #BEFCFF 25% 50%, #005258 50% 75%, #99C23B 75%);
-} */
-
+/* Blog Post Cards */
 
 .blog-area-block {
     margin: 20px 0 20px 0;
@@ -73,3 +70,65 @@
     margin-left: 30px;
     margin-bottom: 30px;
 }
+
+/* Main Blog Posts */
+/* .blog p has line height of 30px */
+/* .blog h4 has font size of 24px */
+
+
+/* Blog hero */
+.blog-hero {
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.blog-hero-row {
+    height: 100%;
+}
+
+/* blog-hero-text aims to be similar to title-container, but the text is centered and has no underline. */
+.blog-hero-text {
+    /* position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* text-align: center; */
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 50px;
+    height: 100%;
+}
+/* thicker hr */
+.blog-hero-text hr {
+    border: 3px solid #fff;
+    width: 60%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.blog-hero-img {
+    max-height: 100%;
+    padding: 0;
+    /* padding: 50px 50px 50px 25px; */
+}
+
+.blog-hero-img img {
+    width: 100%;
+    height: auto;;
+    /* border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000; */
+    /* center the img in the element */
+    margin: 0 auto;
+}
+
+.blog p {
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+

@@ -51,6 +51,11 @@
     background-color: #eeeeee88;
 }
 
+.ns-bg-gray-3-50 {
+    background-color: #d0d1d288;
+}
+
+
 .ns-bg-palette-1-45 {
     background: linear-gradient(45deg, #458083 20%, #BEFCFF 20% 50%, #005258 50% 80%, #99C23B 80%);
 }
@@ -65,6 +70,15 @@
 
 .ns-bg-palette-2-315 {
     background: linear-gradient(315deg, #005258 20%, #ECF5CE 20% 50%, #778551 50% 80%, #99C23B 80%);
+}
+
+.ns-bg-palette-3-0 {
+    /* background linear gradient with the following colors: #99C23B  #5FB64A #00A75A #00966A #008477 #00727F*/
+    background: linear-gradient(0deg, #99C23B 0 15%, #5FB64A 15% 30%, #00A75A 30% 50%, #00966A 50% 70%, #008477 70% 85%, #00727F 85% 100%);
+}
+
+.ns-bg-palette-3-45 {
+    background: linear-gradient(45deg, #99C23B 0 15%, #5FB64A 15% 30%, #00A75A 30% 50%, #00966A 50% 70%, #008477 70% 85%, #00727F 85% 100%);
 }
 
 .ns-shadow-1 {

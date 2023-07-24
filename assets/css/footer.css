@@ -65,11 +65,13 @@
     color: #fff;
     font-size: 32px;
     font-weight: 600;
+    width: 100%;
 } 
 
 .footer-logo img {
     max-width: 64px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
+    border-radius: 8px;
 } 
 
 .footer-section {

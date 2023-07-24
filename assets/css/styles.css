@@ -1,10 +1,15 @@
+.ns-relative {
+    position: relative;
+}
+
+
+
 .ns-green-light {
     background-color: #b3dc55;
     color: black;    
     font-weight: 500;  
     font-size: 20px;
 }
-
 
 .ns-green {
     background-color: #99c23b;
@@ -19,6 +24,26 @@
     font-weight: 500;   
 }
 
+.ns-green-left-underline-1::after {
+    content: "";
+    background: #99c23b;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 5px;
+    width: 75px;
+}
+
+.ns-green-left-underline-2::after {
+    content: "";
+    background: #99c23b;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+}
+
 .ns-green-dark {
     background-color: #4D7600;
     color: white;
@@ -30,6 +55,27 @@
     background-color: #335C00;
     color: white;
 }
+
+.ns-green-dark-left-underline-1::after {
+    content: "";
+    background: #4D7600;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 5px;
+    width: 75px;
+}
+
+.ns-green-dark-left-underline-2::after {
+    content: "";
+    background: #4D7600;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+}
+
 
 .ns-bg-white {
     background-color: #ffffff;

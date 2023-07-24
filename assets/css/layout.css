@@ -83,13 +83,13 @@ ul {
     width: max-content;
 }
 
-.title-container:after {
+/* .title-container:after {
     content: "";
     background: #4D7600;
     position: absolute;
     height: 5px;
     width: 75px;
-}
+} */
 
 .featured-container {
     margin: 20px;

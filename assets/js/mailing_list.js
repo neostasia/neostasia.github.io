@@ -2,13 +2,39 @@
 let mailingListInputLimits;
 let maxMailingListEmailLengthError;
 
-const mailingListForm = document.getElementById('mailing-list-form');
-const emailInput = document.getElementById('mailing-list-email');
-const emailStatusElement = document.getElementById('mailing-list-email-status');
+let mailingListForm;
+let emailInput;
+let emailStatusElement;
 
+async function getElementsWhenReady() {
+    return new Promise((resolve) => {
+        const checkElements = () => {
+            mailingListForm = document.getElementById('mailing-list-form');
+            emailInput = document.getElementById('mailing-list-email');
+            emailStatusElement = document.getElementById('mailing-list-email-status');
+    
+            if (mailingListForm && emailInput && emailStatusElement) {
+                // Your code that uses the elements goes here
+        
+                // Resolve the promise when all elements are available
+                resolve();
+            } else {
+                // Elements are not available yet, wait and check again after a short delay
+                setTimeout(checkElements, 50);
+            }
+        };
+  
+        // Start checking for elements
+        checkElements();
+    });
+}
+  
+// Call the asynchronous function to get the elements when they are available
+getElementsWhenReady().then(() => {
+    // Your code that relies on the elements being available goes here
 
-// Fetch the character_limits.json file
-fetch('./backend/config/character_limits.json')
+    // Fetch the character_limits.json file
+    fetch('./backend/config/character_limits.json')
     .then((response) => response.json())
     .then((data) => {
         // Get the character limits for mailing list
@@ -25,17 +51,17 @@ fetch('./backend/config/character_limits.json')
 
 
 
-// Add an event listener to the input field to check its value
-emailInput.addEventListener('input', () => {
+    // Add an event listener to the input field to check its value
+    emailInput.addEventListener('input', () => {
     const emailValue = emailInput.value;
     if (emailValue.trim() === '') {
         // If the input field is empty, clear the innerHTML
         emailStatusElement.style.color = "white";
         emailStatusElement.innerHTML = '';
     }
-});
+    });
 
-mailingListForm.addEventListener('submit', async (e) => {
+    mailingListForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     // Check if email length is within rannge
@@ -79,4 +105,7 @@ mailingListForm.addEventListener('submit', async (e) => {
         console.error(error);
         alert(`An error occurred: ${error}`);
     }
+    });
+
 });
+  

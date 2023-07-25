@@ -4,19 +4,30 @@
 
 .card {
     margin: 0px;
+    border-radius: 10px;
+    position: relative;
 }
 
-/* .card:hover {
-    bottom: 5px;
-} */
+.card-icon {
+    position: absolute;
+    right: 10%;
+    top: -10px;
+}
 
 .card-block {
+    margin: 0;
     padding: 0;
+}
+
+.card-block > div {
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-block h3 {
     font-size: 24px;
     padding: 20px;
+    border-radius: 10px 0 0 0;
 }
 
 .card-img-top {
@@ -25,13 +36,10 @@
 
 .card-title {
     font-weight: 600;
-    margin: 0px;
+    width: max-content;
 }
 
 .card-text {
-    font-size: 18px;
-    padding: 20px 80px 20px 20px;
-    margin: 0;
     text-indent: 2em;
 }
 
@@ -56,8 +64,6 @@
 }
 
 .list-group-item {
-    margin: 0px;
-    padding: 20px 80px 20px 20px;
 
     height: 100%;
     text-align: left;
@@ -65,12 +71,9 @@
 
     border-radius: 0px;
     border: none;
-
-    background-color: #ffffff;
 }
 
 .list-group-item a {
-    color: #151414;
     text-decoration: none;
 }
 

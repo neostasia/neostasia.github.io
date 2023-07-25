@@ -2,43 +2,6 @@
     border-radius: 8px;
 }
 
-/*
-
-
-.navbar-text {
-    margin-left: 10%;
-    margin-right: 10%;
-    bottom: 0;
-}
-
-
-.nav-item:hover {
-    text-decoration: underline;
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0px;
-    padding: 0px;
-}
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        margin-top: 20px;
-        padding: 25px;
-        border: 3px solid #f8f9fa;
-    }
-}
-
-.search-bar {
-    padding: 10px;
-}
- */
-
-
-
-
 
 .navbar {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);

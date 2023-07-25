@@ -1,56 +1,15 @@
 
-.hero {
-    /* height: 100%; */
-    /* height: calc(100vh - 100px); */
-    position: relative;
-    padding-bottom: 50px;
-}
-
-/*   
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -100px;
-    width: 40%;
-    height: 100%;
-    background-color: #eeeeee;
-    transform: skewX(15deg);
-    z-index: 9;
-    opacity: 50%;
-} */
-
-.hero-row {
-    height: 100%;
-}
-.hero-row > div {
+.hero > div {
     padding-bottom: 200px;
 }
 
-.hero-image-wrapper {
-    padding: 0px;
-}
-
-.hero-image {
+.hero-img {
     width: 80%;
-    margin: 50px auto;
-    z-index: 99;
+    margin: 50px;
 }
-
-
-/* 
-.hero-image:hover {
-    transform: scale(1.01);
-    transition-duration: 0.2s;
-} 
-
-.hero-header {
-    padding: 0 50px 0 50px;
-} 
-*/
 
 .hero-text {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px;
 }
 
 .hero-text p {

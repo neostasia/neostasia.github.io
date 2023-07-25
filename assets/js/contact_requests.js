@@ -11,8 +11,6 @@ const contactRequestMessageInput = document.getElementById('contact-request-mess
 
 const contactRequestMessageCharCounter = document.getElementById('contact-request-message-char-counter');
 
-
-
 // Fetch the character_limits.json file
 fetch('./backend/config/character_limits.json')
     .then((response) => response.json())
@@ -25,10 +23,14 @@ fetch('./backend/config/character_limits.json')
         contactRequestNameInput.setAttribute('maxlength', contactRequestInputLimits.name);
         contactRequestEmailInput.setAttribute('maxlength', contactRequestInputLimits.email);
         contactRequestMessageInput.setAttribute('maxlength', contactRequestInputLimits.message);
+
+    // Set the initial value for the message character counter
+    contactRequestMessageCharCounter.innerHTML = `0/${contactRequestInputLimits.message}`;
     })
     .catch((error) => {
             console.error('Error loading character_limits.json:', error);
     });
+
 
 
 contactRequestMessageInput.addEventListener('input', () => {

@@ -45,49 +45,54 @@
     
 
     <!-- Contact Form -->
-    <div class="container my-5 ns-bg-gray-3-50">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="title-container">
-                    <h1 class="fw-bold display-5 ns-relative ns-blue-9-left-underline-1">Contact Us</h1>
-                </div>
-                <p>If you'd like to get in touch with us, please use the following form. Please note that we are unable to answer specific queries from parents about internet safety.</p>
-                <form id="contact-request-form">
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <label for="contact-request-subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="contact-request-subject" name="contact-request-subject" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="contact-request-name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="contact-request-name" name="contact-request-name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="contact-request-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="contact-request-email" name="contact-request-email" required>
-                        </div>
-                        
-                        <div class="col-12">
-                            <label for="contact-request-message" class="form-label">Message</label>
-                            <textarea class="form-control" id="contact-request-message" name="contact-request-message" rows="5" required></textarea>
-                        </div>
-                        <!-- <input type="hidden" name="contact-request-timestamp" id="contact-request-timestamp" value=""> -->
-                    </div>
 
-                    <!-- Character counter -->
-                    <div class="float-end" id="contact-request-message-char-counter">
-                        0/2048
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-dark fw-bold">Send</button>
-                    </div>
-
-                </form>
+    <div class="ns-bg-green-palette-3-45 ns-px-150">
+        <div class="py-4 ns-bg-gray-2-50 ns-p-50">
+            <div class="mt-4 mb-3 p-4 ns-w-max-content">
+                <h1 class="fw-bold display-5 ns-relative ns-blue-9-left-underline-1">Contact Us</h1>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <img class="featured-img" src="./assets/images/contact_us.jpg" alt="Contact Us">
+            <div class="py-2">
+                
+                <div class="row px-4">
+                    <div class="featured-text px-4 col-xl-7 col-lg-12">
+                        <p>If you'd like to get in touch with us, please use the following form. Please note that we are unable to answer specific queries from parents about internet safety.</p>
+                    <form id="contact-request-form">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="contact-request-subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="contact-request-subject" name="contact-request-subject" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contact-request-name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="contact-request-name" name="contact-request-name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contact-request-email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contact-request-email" name="contact-request-email" required>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="contact-request-message" class="form-label">Message</label>
+                                <textarea class="form-control" id="contact-request-message" name="contact-request-message" rows="5" required></textarea>
+                            </div>
+                            <!-- <input type="hidden" name="contact-request-timestamp" id="contact-request-timestamp" value=""> -->
+                        </div>
+
+                        <!-- Character counter -->
+                        <div class="float-end pe-2" id="contact-request-message-char-counter">
+
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark fw-bold">Send</button>
+                        </div>
+
+                    </form>
+                    </div>
+                    <div class="col-xl-5 col-lg-12">
+                        <img class="my-4 w-100 ns-shadow-1" src="https://picsum.photos/seed/contactus/1280/720" alt="Featured Image">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

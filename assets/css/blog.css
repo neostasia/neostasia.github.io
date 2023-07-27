@@ -1,22 +1,5 @@
 /* Blog Post Cards */
 
-.blog-area-block {
-    margin: 20px 0 20px 0;
-    padding: 50px 0 50px 0;
-}
-
-.blog-area-block-left p {
-    margin: 20px 40px 20px 0px;
-    padding: 50px;
-    border-radius: 10px;
-    text-indent: 2em;
-}
-
-.blog-area-img {
-    width: 100%;
-    padding: 20px 40px 20px 0px;
-}
-
 .blog-wrapper {
     margin: 20px 40px 20px 40px;
     padding: 30px;

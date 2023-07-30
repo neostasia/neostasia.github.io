@@ -1,2 +1,2 @@
-# neostasia.github.io
-Neostasia website
+# NeoStasia
+Source code for NeoStasia being developed by Matthew Cheng & Rento Saijo.

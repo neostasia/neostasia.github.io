@@ -2,3 +2,4 @@
 __pycache__
 X_*
 outputs/
+credentials.json
